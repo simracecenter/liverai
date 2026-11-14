@@ -558,7 +558,7 @@ mod tests {
 
     #[test]
     fn paint_ids_are_digits_only() {
-        assert!(valid_paint_id("341237"));
+        assert!(valid_paint_id("123456"));
         assert!(!valid_paint_id(""));
         assert!(!valid_paint_id("12/../x"));
         assert!(!valid_paint_id("1234567890123"));

@@ -1,0 +1,22 @@
+/* Sim RaceCenter brand tokens. Dark only. Source: simracecenter.com/brand */
+:root {
+  --race-control: #05070a; /* ground */
+  --cockpit-grey: #111827; /* surfaces */
+  --border: #1f2937;
+  --border-strong: #374151;
+  --apex-orange: #ff5f1f; /* the one primary action per screen */
+  --telemetry-blue: #0ea5e9; /* data values and status */
+  --flag-yellow: #fbbf24; /* caution only */
+  --flag-red: #ef4444; /* critical only */
+  --text: #ffffff;
+  --text-dim: #9ca3af;
+
+  --font-ui: 'Roboto', system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, monospace;
+
+  --radius: 4px;
+  --radius-panel: 6px;
+  --header-height: 52px;
+
+  color-scheme: dark;
+}

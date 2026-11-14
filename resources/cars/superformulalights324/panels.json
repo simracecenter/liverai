@@ -1,0 +1,1059 @@
+{
+  "schema": "panels/0.1",
+  "car": "superformulalights324",
+  "paint_folder": "superformulalights324",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "total_paintable_px": 3363763,
+  "confirmed_paintable_px": 2802164,
+  "confirmed_coverage_ratio": 0.833,
+  "uv_up_zero_deg": "-y (top of canvas)",
+  "panels": [
+    {
+      "id": "p001",
+      "bbox": [
+        459,
+        598,
+        1475,
+        1449
+      ],
+      "area_px": 583043,
+      "calibration_hex": "#EB2F2F",
+      "label": "monocoque_upper_and_sides",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p002",
+      "bbox": [
+        559,
+        219,
+        1512,
+        665
+      ],
+      "area_px": 234709,
+      "calibration_hex": "#5E87EB",
+      "label": "sidepod_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p003",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png",
+        "cars/superformulalights324/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p003",
+      "bbox": [
+        560,
+        1382,
+        1512,
+        1797
+      ],
+      "area_px": 213640,
+      "calibration_hex": "#80BF26",
+      "label": "sidepod_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p002",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png",
+        "cars/superformulalights324/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p004",
+      "bbox": [
+        0,
+        1760,
+        650,
+        2048
+      ],
+      "area_px": 184143,
+      "calibration_hex": "#EB5ED9",
+      "label": "front_wing_mainplane",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p005",
+      "bbox": [
+        18,
+        787,
+        505,
+        1260
+      ],
+      "area_px": 149004,
+      "calibration_hex": "#2FEBCB",
+      "label": "nose_cone_tip",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png",
+        "cars/superformulalights324/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p006",
+      "bbox": [
+        1537,
+        2,
+        2046,
+        323
+      ],
+      "area_px": 100286,
+      "calibration_hex": "#BF8B4D",
+      "label": "rear_gearbox_tail_cone",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/rear.png",
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p007",
+      "bbox": [
+        1622,
+        1831,
+        2046,
+        2046
+      ],
+      "area_px": 90957,
+      "calibration_hex": "#5E2FEB",
+      "label": "rear_wing_upper_flap_top",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p008",
+      "bbox": [
+        1447,
+        706,
+        1908,
+        1020
+      ],
+      "area_px": 88741,
+      "calibration_hex": "#64EB5E",
+      "label": "engine_cover_sharkfin_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p009",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p009",
+      "bbox": [
+        1458,
+        1028,
+        1908,
+        1341
+      ],
+      "area_px": 86237,
+      "calibration_hex": "#BF2659",
+      "label": "engine_cover_sharkfin_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p008",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p010",
+      "bbox": [
+        1149,
+        1859,
+        1575,
+        2033
+      ],
+      "area_px": 74124,
+      "calibration_hex": "#5EB6EB",
+      "label": "rear_wing_lower_mainplane",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/rear.png",
+        "cars/superformulalights324/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p011",
+      "bbox": [
+        1,
+        1469,
+        292,
+        1769
+      ],
+      "area_px": 71016,
+      "calibration_hex": "#DBEB2F",
+      "label": "front_wing_endplate_inner_right",
+      "up_angle_deg": 0,
+      "forward": "+x",
+      "mirror_of": "p012",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p012",
+      "bbox": [
+        1,
+        280,
+        278,
+        579
+      ],
+      "area_px": 70008,
+      "calibration_hex": "#A74DBF",
+      "label": "front_wing_endplate_inner_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p011",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p013",
+      "bbox": [
+        835,
+        1748,
+        1649,
+        1847
+      ],
+      "area_px": 63090,
+      "calibration_hex": "#2FEB8C",
+      "label": "halo_main_hoop",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p014",
+      "bbox": [
+        963,
+        908,
+        1388,
+        1140
+      ],
+      "area_px": 60618,
+      "calibration_hex": "#EB7B5E",
+      "label": "cockpit_headrest_tub",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p015",
+      "bbox": [
+        1489,
+        415,
+        1751,
+        707
+      ],
+      "area_px": 53720,
+      "calibration_hex": "#2633BF",
+      "label": "rear_wing_endplate_inner_right",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p016",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/rear.png",
+        "cars/superformulalights324/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p016",
+      "bbox": [
+        1489,
+        1340,
+        1751,
+        1632
+      ],
+      "area_px": 53642,
+      "calibration_hex": "#93EB5E",
+      "label": "rear_wing_endplate_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p020",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png",
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p017",
+      "bbox": [
+        1165,
+        3,
+        1555,
+        311
+      ],
+      "area_px": 51892,
+      "calibration_hex": "#EB2FAC",
+      "label": "undertray_side_floor_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p018",
+      "bbox": [
+        0,
+        0,
+        462,
+        129
+      ],
+      "area_px": 50483,
+      "calibration_hex": "#4DBBBF",
+      "label": "front_wing_underside",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p019",
+      "bbox": [
+        1733,
+        1346,
+        1961,
+        1628
+      ],
+      "area_px": 50316,
+      "calibration_hex": "#EBBB2F",
+      "label": "rear_wing_endplate_inner_left",
+      "up_angle_deg": 0,
+      "forward": "+x",
+      "mirror_of": "p015",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/rear.png",
+        "cars/superformulalights324/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p020",
+      "bbox": [
+        1733,
+        419,
+        1961,
+        701
+      ],
+      "area_px": 50263,
+      "calibration_hex": "#9E5EEB",
+      "label": "rear_wing_endplate_outer_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p016",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png",
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p021",
+      "bbox": [
+        1912,
+        649,
+        2048,
+        1398
+      ],
+      "area_px": 49165,
+      "calibration_hex": "#26BF3F",
+      "label": "rear_wing_flap_underside",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p022",
+      "bbox": [
+        0,
+        1309,
+        335,
+        1490
+      ],
+      "area_px": 46238,
+      "calibration_hex": "#EB5E70",
+      "label": "front_wing_endplate_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p026",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png",
+        "cars/superformulalights324/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p023",
+      "bbox": [
+        945,
+        1404,
+        1393,
+        1563
+      ],
+      "area_px": 45407,
+      "calibration_hex": "#2F7EEB",
+      "label": "sidepod_louvre_panel_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p024",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p024",
+      "bbox": [
+        945,
+        484,
+        1393,
+        643
+      ],
+      "area_px": 44759,
+      "calibration_hex": "#9EBF4D",
+      "label": "sidepod_louvre_panel_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p023",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/top.png",
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p025",
+      "bbox": [
+        1631,
+        1723,
+        2046,
+        1831
+      ],
+      "area_px": 44006,
+      "calibration_hex": "#EA2FEB",
+      "label": "rear_wing_upper_flap_rear_face",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/rear.png",
+        "cars/superformulalights324/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p026",
+      "bbox": [
+        0,
+        557,
+        321,
+        738
+      ],
+      "area_px": 43187,
+      "calibration_hex": "#5EEBC1",
+      "label": "front_wing_endplate_outer_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p022",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p027",
+      "bbox": [
+        855,
+        19,
+        1173,
+        301
+      ],
+      "area_px": 41643,
+      "calibration_hex": "#BF6526",
+      "label": "island_027",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p028",
+      "bbox": [
+        11,
+        1157,
+        286,
+        1345
+      ],
+      "area_px": 36634,
+      "calibration_hex": "#6F5EEB",
+      "label": "front_wing_flap_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p029",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p029",
+      "bbox": [
+        12,
+        728,
+        286,
+        889
+      ],
+      "area_px": 36315,
+      "calibration_hex": "#4FEB2F",
+      "label": "front_wing_flap_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p028",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p030",
+      "bbox": [
+        474,
+        22,
+        677,
+        265
+      ],
+      "area_px": 34229,
+      "calibration_hex": "#BF4D82",
+      "label": "island_030",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p031",
+      "bbox": [
+        80,
+        132,
+        362,
+        269
+      ],
+      "area_px": 31250,
+      "calibration_hex": "#2FBCEB",
+      "label": "island_031",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p032",
+      "bbox": [
+        854,
+        1830,
+        1105,
+        2042
+      ],
+      "area_px": 27565,
+      "calibration_hex": "#EBE45E",
+      "label": "halo_front_V_strut",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/front.png",
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p033",
+      "bbox": [
+        414,
+        1269,
+        571,
+        1520
+      ],
+      "area_px": 25127,
+      "calibration_hex": "#8C26BF",
+      "label": "sidepod_leading_bargeboard_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p034",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_left.png",
+        "cars/superformulalights324/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p034",
+      "bbox": [
+        429,
+        527,
+        572,
+        778
+      ],
+      "area_px": 23829,
+      "calibration_hex": "#5EEB92",
+      "label": "sidepod_leading_bargeboard_right",
+      "up_angle_deg": 0,
+      "forward": "+x",
+      "mirror_of": "p033",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/superformulalights324/calibration/showroom/side_right.png",
+        "cars/superformulalights324/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p035",
+      "bbox": [
+        310,
+        530,
+        442,
+        778
+      ],
+      "area_px": 23301,
+      "calibration_hex": "#EB3E2F",
+      "label": "island_035",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p036",
+      "bbox": [
+        667,
+        1696,
+        1206,
+        1828
+      ],
+      "area_px": 22552,
+      "calibration_hex": "#4D65BF",
+      "label": "island_036",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p037",
+      "bbox": [
+        327,
+        1269,
+        431,
+        1517
+      ],
+      "area_px": 20435,
+      "calibration_hex": "#8EEB2F",
+      "label": "island_037",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p038",
+      "bbox": [
+        307,
+        1635,
+        462,
+        1763
+      ],
+      "area_px": 15154,
+      "calibration_hex": "#EB5ECE",
+      "label": "island_038",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p039",
+      "bbox": [
+        307,
+        291,
+        455,
+        413
+      ],
+      "area_px": 15153,
+      "calibration_hex": "#26BFB2",
+      "label": "island_039",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p040",
+      "bbox": [
+        662,
+        7,
+        857,
+        102
+      ],
+      "area_px": 14626,
+      "calibration_hex": "#EBB55E",
+      "label": "island_040",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p041",
+      "bbox": [
+        662,
+        1945,
+        857,
+        2040
+      ],
+      "area_px": 14565,
+      "calibration_hex": "#6D2FEB",
+      "label": "island_041",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p042",
+      "bbox": [
+        280,
+        1526,
+        436,
+        1659
+      ],
+      "area_px": 14565,
+      "calibration_hex": "#4DBF51",
+      "label": "island_042",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p043",
+      "bbox": [
+        280,
+        387,
+        436,
+        521
+      ],
+      "area_px": 14478,
+      "calibration_hex": "#EB2F5F",
+      "label": "island_043",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p044",
+      "bbox": [
+        655,
+        115,
+        857,
+        208
+      ],
+      "area_px": 14104,
+      "calibration_hex": "#5EABEB",
+      "label": "island_044",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p045",
+      "bbox": [
+        648,
+        1839,
+        849,
+        1932
+      ],
+      "area_px": 14103,
+      "calibration_hex": "#A7BF26",
+      "label": "island_045",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p046",
+      "bbox": [
+        1734,
+        1029,
+        1927,
+        1150
+      ],
+      "area_px": 11886,
+      "calibration_hex": "#D85EEB",
+      "label": "island_046",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p047",
+      "bbox": [
+        1734,
+        897,
+        1927,
+        1018
+      ],
+      "area_px": 11872,
+      "calibration_hex": "#2FEB9B",
+      "label": "island_047",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p048",
+      "bbox": [
+        433,
+        445,
+        616,
+        514
+      ],
+      "area_px": 11617,
+      "calibration_hex": "#BF6D4D",
+      "label": "island_048",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p049",
+      "bbox": [
+        433,
+        1533,
+        616,
+        1602
+      ],
+      "area_px": 11598,
+      "calibration_hex": "#2F30EB",
+      "label": "island_049",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p050",
+      "bbox": [
+        467,
+        1600,
+        547,
+        1762
+      ],
+      "area_px": 10901,
+      "calibration_hex": "#88EB5E",
+      "label": "island_050",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p051",
+      "bbox": [
+        470,
+        293,
+        542,
+        447
+      ],
+      "area_px": 10775,
+      "calibration_hex": "#BF2680",
+      "label": "island_051",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p052",
+      "bbox": [
+        617,
+        1291,
+        755,
+        1392
+      ],
+      "area_px": 7847,
+      "calibration_hex": "#5EDAEB",
+      "label": "island_052",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p053",
+      "bbox": [
+        617,
+        655,
+        755,
+        756
+      ],
+      "area_px": 7828,
+      "calibration_hex": "#EBCA2F",
+      "label": "island_053",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p054",
+      "bbox": [
+        1162,
+        565,
+        1363,
+        628
+      ],
+      "area_px": 7583,
+      "calibration_hex": "#8A4DBF",
+      "label": "island_054",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p055",
+      "bbox": [
+        1414,
+        298,
+        1543,
+        432
+      ],
+      "area_px": 7314,
+      "calibration_hex": "#2FEB5D",
+      "label": "island_055",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    }
+  ]
+}

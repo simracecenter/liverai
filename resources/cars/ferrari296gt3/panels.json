@@ -1,0 +1,1164 @@
+{
+  "schema": "panels/0.1",
+  "car": "ferrari296gt3",
+  "paint_folder": "ferrari296gt3",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "total_paintable_px": 3304297,
+  "confirmed_paintable_px": 2659525,
+  "confirmed_coverage_ratio": 0.8049,
+  "uv_up_zero_deg": "-y (top of canvas)",
+  "panels": [
+    {
+      "id": "p001",
+      "bbox": [
+        662,
+        1340,
+        1584,
+        1887
+      ],
+      "area_px": 277005,
+      "calibration_hex": "#EB2F2F",
+      "label": "door_and_rear_quarter_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p002",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p002",
+      "bbox": [
+        662,
+        133,
+        1574,
+        709
+      ],
+      "area_px": 269852,
+      "calibration_hex": "#5E87EB",
+      "label": "door_and_rear_quarter_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p001",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p003",
+      "bbox": [
+        708,
+        695,
+        1256,
+        1352
+      ],
+      "area_px": 183348,
+      "calibration_hex": "#80BF26",
+      "label": "roof",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p004",
+      "bbox": [
+        172,
+        722,
+        633,
+        1382
+      ],
+      "area_px": 176197,
+      "calibration_hex": "#EB5ED9",
+      "label": "hood",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p005",
+      "bbox": [
+        4,
+        1683,
+        763,
+        2048
+      ],
+      "area_px": 170708,
+      "calibration_hex": "#2FEBCB",
+      "label": "rear_bumper_fascia",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/rear.png",
+        "cars/ferrari296gt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p006",
+      "bbox": [
+        0,
+        491,
+        220,
+        1557
+      ],
+      "area_px": 153998,
+      "calibration_hex": "#BF8B4D",
+      "label": "front_bumper",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p007",
+      "bbox": [
+        1339,
+        1752,
+        2048,
+        2048
+      ],
+      "area_px": 153232,
+      "calibration_hex": "#5E2FEB",
+      "label": "rear_wing_underside",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p008",
+      "bbox": [
+        1404,
+        800,
+        1858,
+        1247
+      ],
+      "area_px": 133027,
+      "calibration_hex": "#64EB5E",
+      "label": "engine_decklid_cover",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p009",
+      "bbox": [
+        18,
+        20,
+        900,
+        284
+      ],
+      "area_px": 124016,
+      "calibration_hex": "#BF2659",
+      "label": "front_splitter_and_undertray",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p010",
+      "bbox": [
+        1185,
+        580,
+        1509,
+        1464
+      ],
+      "area_px": 118237,
+      "calibration_hex": "#5EB6EB",
+      "label": "b_pillar_and_engine_intake_hoop",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p011",
+      "bbox": [
+        1716,
+        734,
+        2021,
+        1314
+      ],
+      "area_px": 99683,
+      "calibration_hex": "#DBEB2F",
+      "label": "rear_deck_spoiler_bridge",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p012",
+      "bbox": [
+        1047,
+        6,
+        2026,
+        297
+      ],
+      "area_px": 85411,
+      "calibration_hex": "#A74DBF",
+      "label": "rear_wing_top",
+      "up_angle_deg": 180,
+      "forward": "+y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p013",
+      "bbox": [
+        1552,
+        1356,
+        1823,
+        1772
+      ],
+      "area_px": 60126,
+      "calibration_hex": "#2FEB8C",
+      "label": "rear_fender_haunch_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p014",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/rear_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p014",
+      "bbox": [
+        1554,
+        278,
+        1826,
+        691
+      ],
+      "area_px": 60067,
+      "calibration_hex": "#EB7B5E",
+      "label": "rear_fender_haunch_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p013",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/rear_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p015",
+      "bbox": [
+        754,
+        779,
+        902,
+        1269
+      ],
+      "area_px": 51632,
+      "calibration_hex": "#2633BF",
+      "label": "windshield_header_banner",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p016",
+      "bbox": [
+        1327,
+        854,
+        1541,
+        1194
+      ],
+      "area_px": 42743,
+      "calibration_hex": "#93EB5E",
+      "label": "rear_window_recess_frame",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p017",
+      "bbox": [
+        153,
+        99,
+        766,
+        178
+      ],
+      "area_px": 37716,
+      "calibration_hex": "#EB2FAC",
+      "label": "front_splitter_leading_lip",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p018",
+      "bbox": [
+        801,
+        1922,
+        1213,
+        2047
+      ],
+      "area_px": 35864,
+      "calibration_hex": "#4DBBBF",
+      "label": "pitboard_lower",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p019",
+      "bbox": [
+        320,
+        1276,
+        724,
+        1450
+      ],
+      "area_px": 35065,
+      "calibration_hex": "#EBBB2F",
+      "label": "front_fender_upper_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p024",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p020",
+      "bbox": [
+        798,
+        1848,
+        1244,
+        1954
+      ],
+      "area_px": 32772,
+      "calibration_hex": "#9E5EEB",
+      "label": "pitboard_upper",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p021",
+      "bbox": [
+        1409,
+        4,
+        1731,
+        129
+      ],
+      "area_px": 29681,
+      "calibration_hex": "#26BF3F",
+      "label": "island_021",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p022",
+      "bbox": [
+        1790,
+        577,
+        2028,
+        779
+      ],
+      "area_px": 29584,
+      "calibration_hex": "#EB5E70",
+      "label": "rear_deck_corner_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p023",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p023",
+      "bbox": [
+        1790,
+        1268,
+        2028,
+        1471
+      ],
+      "area_px": 29450,
+      "calibration_hex": "#2F7EEB",
+      "label": "rear_deck_corner_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p022",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p024",
+      "bbox": [
+        423,
+        598,
+        743,
+        771
+      ],
+      "area_px": 26804,
+      "calibration_hex": "#9EBF4D",
+      "label": "front_fender_upper_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p019",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p025",
+      "bbox": [
+        1545,
+        689,
+        1795,
+        817
+      ],
+      "area_px": 22422,
+      "calibration_hex": "#EA2FEB",
+      "label": "engine_deck_side_buttress_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p026",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p026",
+      "bbox": [
+        1545,
+        1230,
+        1795,
+        1359
+      ],
+      "area_px": 22310,
+      "calibration_hex": "#5EEBC1",
+      "label": "engine_deck_side_buttress_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p025",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/top.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p027",
+      "bbox": [
+        912,
+        583,
+        1058,
+        803
+      ],
+      "area_px": 17392,
+      "calibration_hex": "#BF6526",
+      "label": "c_pillar_window_panel_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p028",
+      "bbox": [
+        715,
+        1350,
+        970,
+        1504
+      ],
+      "area_px": 17063,
+      "calibration_hex": "#6F5EEB",
+      "label": "mirror_housing_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p033",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p029",
+      "bbox": [
+        578,
+        299,
+        717,
+        502
+      ],
+      "area_px": 16453,
+      "calibration_hex": "#4FEB2F",
+      "label": "front_fender_trailing_arch_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p030",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p030",
+      "bbox": [
+        578,
+        1546,
+        717,
+        1752
+      ],
+      "area_px": 16374,
+      "calibration_hex": "#BF4D82",
+      "label": "front_fender_trailing_arch_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p029",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p031",
+      "bbox": [
+        662,
+        891,
+        741,
+        1156
+      ],
+      "area_px": 16276,
+      "calibration_hex": "#2FBCEB",
+      "label": "windshield_cowl_bar",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p032",
+      "bbox": [
+        239,
+        1582,
+        498,
+        1695
+      ],
+      "area_px": 15930,
+      "calibration_hex": "#EBE45E",
+      "label": "front_fender_outer_wheel_arch_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p035",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p033",
+      "bbox": [
+        716,
+        543,
+        935,
+        707
+      ],
+      "area_px": 15826,
+      "calibration_hex": "#8C26BF",
+      "label": "mirror_housing_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p028",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p034",
+      "bbox": [
+        257,
+        1953,
+        518,
+        2033
+      ],
+      "area_px": 15714,
+      "calibration_hex": "#5EEB92",
+      "label": "rear_diffuser_center_lip",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p035",
+      "bbox": [
+        282,
+        352,
+        498,
+        466
+      ],
+      "area_px": 15520,
+      "calibration_hex": "#EB3E2F",
+      "label": "front_fender_outer_wheel_arch_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p032",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p036",
+      "bbox": [
+        209,
+        1394,
+        436,
+        1520
+      ],
+      "area_px": 15296,
+      "calibration_hex": "#4D65BF",
+      "label": "front_bumper_side_canard_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p037",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p037",
+      "bbox": [
+        209,
+        527,
+        436,
+        651
+      ],
+      "area_px": 15048,
+      "calibration_hex": "#8EEB2F",
+      "label": "front_bumper_side_canard_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p036",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/front_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p038",
+      "bbox": [
+        603,
+        904,
+        666,
+        1143
+      ],
+      "area_px": 14906,
+      "calibration_hex": "#EB5ECE",
+      "label": "island_038",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p039",
+      "bbox": [
+        1861,
+        1703,
+        2022,
+        1815
+      ],
+      "area_px": 14560,
+      "calibration_hex": "#26BFB2",
+      "label": "rear_wing_endplate_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p040",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/rear_34_left.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p040",
+      "bbox": [
+        1863,
+        241,
+        2022,
+        344
+      ],
+      "area_px": 14330,
+      "calibration_hex": "#EBB55E",
+      "label": "rear_wing_endplate_outer_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p039",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/rear_34_right.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p041",
+      "bbox": [
+        1045,
+        1245,
+        1178,
+        1395
+      ],
+      "area_px": 14251,
+      "calibration_hex": "#6D2FEB",
+      "label": "island_041",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p042",
+      "bbox": [
+        530,
+        895,
+        619,
+        1154
+      ],
+      "area_px": 14209,
+      "calibration_hex": "#4DBF51",
+      "label": "island_042",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p043",
+      "bbox": [
+        1238,
+        1884,
+        1345,
+        2035
+      ],
+      "area_px": 13213,
+      "calibration_hex": "#EB2F5F",
+      "label": "island_043",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p044",
+      "bbox": [
+        481,
+        328,
+        593,
+        528
+      ],
+      "area_px": 12984,
+      "calibration_hex": "#5EABEB",
+      "label": "island_044",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p045",
+      "bbox": [
+        480,
+        1519,
+        593,
+        1714
+      ],
+      "area_px": 12825,
+      "calibration_hex": "#A7BF26",
+      "label": "island_045",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p046",
+      "bbox": [
+        958,
+        1391,
+        1146,
+        1500
+      ],
+      "area_px": 12239,
+      "calibration_hex": "#D85EEB",
+      "label": "island_046",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p047",
+      "bbox": [
+        146,
+        333,
+        270,
+        495
+      ],
+      "area_px": 11725,
+      "calibration_hex": "#2FEB9B",
+      "label": "island_047",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p048",
+      "bbox": [
+        1487,
+        1610,
+        1650,
+        1764
+      ],
+      "area_px": 11723,
+      "calibration_hex": "#BF6D4D",
+      "label": "island_048",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p049",
+      "bbox": [
+        959,
+        548,
+        1158,
+        648
+      ],
+      "area_px": 11690,
+      "calibration_hex": "#2F30EB",
+      "label": "island_049",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p050",
+      "bbox": [
+        297,
+        914,
+        372,
+        1134
+      ],
+      "area_px": 11651,
+      "calibration_hex": "#88EB5E",
+      "label": "island_050",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p051",
+      "bbox": [
+        1605,
+        1350,
+        1832,
+        1427
+      ],
+      "area_px": 11447,
+      "calibration_hex": "#BF2680",
+      "label": "island_051",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p052",
+      "bbox": [
+        1902,
+        434,
+        2019,
+        600
+      ],
+      "area_px": 11414,
+      "calibration_hex": "#5EDAEB",
+      "label": "rear_wing_endplate_inner_left",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p054",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_right.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p053",
+      "bbox": [
+        1605,
+        620,
+        1831,
+        698
+      ],
+      "area_px": 11298,
+      "calibration_hex": "#EBCA2F",
+      "label": "island_053",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p054",
+      "bbox": [
+        1905,
+        1448,
+        2020,
+        1612
+      ],
+      "area_px": 11060,
+      "calibration_hex": "#8A4DBF",
+      "label": "rear_wing_endplate_inner_right",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p052",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/ferrari296gt3/calibration/showroom/side_left.png",
+        "cars/ferrari296gt3/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p055",
+      "bbox": [
+        927,
+        1246,
+        1052,
+        1440
+      ],
+      "area_px": 10871,
+      "calibration_hex": "#2FEB5D",
+      "label": "island_055",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p056",
+      "bbox": [
+        146,
+        1553,
+        270,
+        1685
+      ],
+      "area_px": 10655,
+      "calibration_hex": "#EB5E65",
+      "label": "island_056",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p057",
+      "bbox": [
+        557,
+        806,
+        761,
+        908
+      ],
+      "area_px": 10428,
+      "calibration_hex": "#265ABF",
+      "label": "island_057",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p058",
+      "bbox": [
+        557,
+        1144,
+        761,
+        1241
+      ],
+      "area_px": 10367,
+      "calibration_hex": "#B7EB5E",
+      "label": "island_058",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p059",
+      "bbox": [
+        1817,
+        1438,
+        1902,
+        1595
+      ],
+      "area_px": 10158,
+      "calibration_hex": "#EB2FDC",
+      "label": "island_059",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p060",
+      "bbox": [
+        1054,
+        633,
+        1167,
+        790
+      ],
+      "area_px": 9864,
+      "calibration_hex": "#4DBFA6",
+      "label": "island_060",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    }
+  ]
+}

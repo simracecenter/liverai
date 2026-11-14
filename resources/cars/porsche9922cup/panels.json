@@ -1,0 +1,657 @@
+{
+  "schema": "panels/0.1",
+  "car": "porsche9922cup",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "total_paintable_px": 3437303,
+  "confirmed_paintable_px": 2902228,
+  "confirmed_coverage_ratio": 0.8443,
+  "uv_up_zero_deg": "-y (top of canvas)",
+  "panels": [
+    {
+      "id": "p001",
+      "bbox": [
+        180,
+        624,
+        1843,
+        1176
+      ],
+      "area_px": 506914,
+      "calibration_hex": "#EB2F2F",
+      "label": "body_side_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p002",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p002",
+      "bbox": [
+        180,
+        1483,
+        1853,
+        2047
+      ],
+      "area_px": 506903,
+      "calibration_hex": "#5E87EB",
+      "label": "body_side_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p001",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p003",
+      "bbox": [
+        192,
+        1039,
+        833,
+        1632
+      ],
+      "area_px": 249897,
+      "calibration_hex": "#80BF26",
+      "label": "hood",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p004",
+      "bbox": [
+        0,
+        1,
+        1291,
+        275
+      ],
+      "area_px": 246047,
+      "calibration_hex": "#EB5ED9",
+      "label": "rear_bumper_upper",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p005",
+      "bbox": [
+        1265,
+        3,
+        2038,
+        272
+      ],
+      "area_px": 194673,
+      "calibration_hex": "#2FEBCB",
+      "label": "rear_wing_mainplane",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p006",
+      "bbox": [
+        964,
+        1135,
+        1425,
+        1536
+      ],
+      "area_px": 170444,
+      "calibration_hex": "#BF8B4D",
+      "label": "roof",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p007",
+      "bbox": [
+        0,
+        747,
+        215,
+        1882
+      ],
+      "area_px": 159536,
+      "calibration_hex": "#5E2FEB",
+      "label": "front_bumper",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p008",
+      "bbox": [
+        1052,
+        303,
+        2038,
+        625
+      ],
+      "area_px": 118696,
+      "calibration_hex": "#64EB5E",
+      "label": "front_splitter_valence",
+      "up_angle_deg": 0,
+      "forward": "+y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p009",
+      "bbox": [
+        1653,
+        1034,
+        1971,
+        1633
+      ],
+      "area_px": 111032,
+      "calibration_hex": "#BF2659",
+      "label": "engine_decklid",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p010",
+      "bbox": [
+        108,
+        429,
+        1148,
+        694
+      ],
+      "area_px": 73943,
+      "calibration_hex": "#5EB6EB",
+      "label": "rear_bumper_lower_valence",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p011",
+      "bbox": [
+        288,
+        179,
+        975,
+        444
+      ],
+      "area_px": 49351,
+      "calibration_hex": "#DBEB2F",
+      "label": "rear_diffuser_arch",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p012",
+      "bbox": [
+        10,
+        304,
+        133,
+        840
+      ],
+      "area_px": 42263,
+      "calibration_hex": "#A74DBF",
+      "label": "rear_wing_underside",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p013",
+      "bbox": [
+        1966,
+        938,
+        2048,
+        1694
+      ],
+      "area_px": 40666,
+      "calibration_hex": "#2FEB8C",
+      "label": "rear_spoiler_lip",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p014",
+      "bbox": [
+        819,
+        1088,
+        972,
+        1587
+      ],
+      "area_px": 38422,
+      "calibration_hex": "#EB7B5E",
+      "label": "windshield_banner",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p015",
+      "bbox": [
+        1833,
+        1576,
+        2011,
+        1864
+      ],
+      "area_px": 33351,
+      "calibration_hex": "#2633BF",
+      "label": "rear_quarter_extension_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p017",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p016",
+      "bbox": [
+        321,
+        233,
+        943,
+        440
+      ],
+      "area_px": 33213,
+      "calibration_hex": "#93EB5E",
+      "label": "rear_bumper_vent_trim",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p017",
+      "bbox": [
+        1937,
+        600,
+        2038,
+        1176
+      ],
+      "area_px": 32854,
+      "calibration_hex": "#EB2FAC",
+      "label": "rear_quarter_extension_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p015",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p018",
+      "bbox": [
+        1734,
+        666,
+        1920,
+        867
+      ],
+      "area_px": 26791,
+      "calibration_hex": "#4DBBBF",
+      "label": "trim_roundel",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p019",
+      "bbox": [
+        1173,
+        523,
+        1526,
+        618
+      ],
+      "area_px": 25712,
+      "calibration_hex": "#EBBB2F",
+      "label": "windshield_name_banner_lower",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p020",
+      "bbox": [
+        1352,
+        461,
+        1705,
+        533
+      ],
+      "area_px": 25346,
+      "calibration_hex": "#9E5EEB",
+      "label": "windshield_name_banner_upper",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p021",
+      "bbox": [
+        1695,
+        1783,
+        1950,
+        2044
+      ],
+      "area_px": 25345,
+      "calibration_hex": "#26BF3F",
+      "label": "rear_fender_arch_trim_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p022",
+      "bbox": [
+        213,
+        1900,
+        419,
+        2045
+      ],
+      "area_px": 24379,
+      "calibration_hex": "#EB5E70",
+      "label": "front_bumper_intake_duct_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p023",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p023",
+      "bbox": [
+        185,
+        626,
+        419,
+        778
+      ],
+      "area_px": 23723,
+      "calibration_hex": "#2F7EEB",
+      "label": "front_bumper_intake_duct_outer_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p022",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p024",
+      "bbox": [
+        1432,
+        1320,
+        1579,
+        1536
+      ],
+      "area_px": 23240,
+      "calibration_hex": "#9EBF4D",
+      "label": "roof_fuel_filler_panel",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p025",
+      "bbox": [
+        342,
+        427,
+        922,
+        506
+      ],
+      "area_px": 22445,
+      "calibration_hex": "#EA2FEB",
+      "label": "rear_bumper_beam_trim",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p026",
+      "bbox": [
+        20,
+        1904,
+        215,
+        2048
+      ],
+      "area_px": 22383,
+      "calibration_hex": "#5EEBC1",
+      "label": "front_bumper_intake_duct_inner_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p051",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p051",
+      "bbox": [
+        92,
+        605,
+        250,
+        750
+      ],
+      "area_px": 11008,
+      "calibration_hex": "#BF2680",
+      "label": "front_bumper_intake_duct_inner_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p026",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p055",
+      "bbox": [
+        1071,
+        997,
+        1265,
+        1071
+      ],
+      "area_px": 9947,
+      "calibration_hex": "#2FEB5D",
+      "label": "mirror_housing_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p058",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p058",
+      "bbox": [
+        1102,
+        1599,
+        1266,
+        1673
+      ],
+      "area_px": 9745,
+      "calibration_hex": "#B7EB5E",
+      "label": "mirror_housing_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p055",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "out/porsche9922cup-b0/layers_overview.png"
+      ]
+    },
+    {
+      "id": "p034",
+      "bbox": [
+        1823,
+        322,
+        2038,
+        494
+      ],
+      "area_px": 17280,
+      "calibration_hex": "#5EEB92",
+      "label": "rear_wing_endplate_outer_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p047",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "liveries/srb-porsche9922cup/showroom/side_left.png",
+        "liveries/srb-porsche9922cup/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p042",
+      "bbox": [
+        92,
+        339,
+        271,
+        449
+      ],
+      "area_px": 14121,
+      "calibration_hex": "#4DBF51",
+      "label": "rear_wing_endplate_inner",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "liveries/srb-porsche9922cup/showroom/side_left.png",
+        "liveries/srb-porsche9922cup/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p047",
+      "bbox": [
+        1018,
+        335,
+        1197,
+        437
+      ],
+      "area_px": 12558,
+      "calibration_hex": "#2FEB9B",
+      "label": "rear_wing_endplate_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p034",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche9922cup/calibration/preview_uv.png",
+        "liveries/srb-porsche9922cup/showroom/side_left.png",
+        "liveries/srb-porsche9922cup/showroom/side_right.png"
+      ]
+    }
+  ]
+}

@@ -393,10 +393,10 @@ fn render_is_deterministic_and_files_round_trip() {
     assert_eq!(a.diffuse, b.diffuse);
     assert_eq!(a.spec, b.spec);
 
-    let written = a.write(&dir.join("out"), "341237", false).unwrap();
-    assert_eq!(written.files[0].name, "car_341237.tga");
-    assert_eq!(written.files[1].name, "car_spec_341237.tga");
-    let bytes = std::fs::read(dir.join("out/car_341237.tga")).unwrap();
+    let written = a.write(&dir.join("out"), "123456", false).unwrap();
+    assert_eq!(written.files[0].name, "car_123456.tga");
+    assert_eq!(written.files[1].name, "car_spec_123456.tga");
+    let bytes = std::fs::read(dir.join("out/car_123456.tga")).unwrap();
     assert_eq!(bytes.len(), written.files[0].bytes);
     let (w, h, rgb) = tga::decode_rgb_rle(&bytes).unwrap();
     assert_eq!((w, h), (512, 512));
@@ -448,11 +448,11 @@ fn calibration_paint_colours_every_island() {
     assert_eq!(cal.spec, t.spec_defaults().rgb);
 
     let dir = temp_dir("calibrate");
-    let summary = cal.write(&dir, "341237", false).unwrap();
+    let summary = cal.write(&dir, "123456", false).unwrap();
     assert_eq!(summary.island_count, 7);
     assert_eq!(summary.paintable_px, t.paintable().unwrap().count());
     assert!(dir.join("islands.json").exists());
-    let header = tga::read_header(&std::fs::read(dir.join("car_341237.tga")).unwrap()).unwrap();
+    let header = tga::read_header(&std::fs::read(dir.join("car_123456.tga")).unwrap()).unwrap();
     assert_eq!((header.image_type, header.bits_per_pixel), (10, 24));
     let _ = std::fs::remove_dir_all(&dir);
 }

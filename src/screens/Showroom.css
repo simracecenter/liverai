@@ -1,0 +1,79 @@
+.showroom__columns {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.showroom__grid {
+  flex: 999 1 560px;
+  min-width: 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-content: start;
+}
+
+.showroom__view {
+  margin: 0;
+  background: var(--cockpit-grey);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+}
+
+.showroom__frame {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--race-control);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showroom__view figcaption {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+}
+
+.showroom__review {
+  flex: 1 1 340px;
+  max-width: 420px;
+  background: var(--cockpit-grey);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+}
+
+.showroom__review-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showroom__review .empty {
+  flex: 0 0 auto;
+  font-size: 13px;
+}
+
+.showroom__verdicts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.showroom__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.showroom__actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

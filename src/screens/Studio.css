@@ -1,0 +1,130 @@
+.studio__columns {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.studio__pad {
+  padding: 14px 16px 8px;
+}
+
+.studio__log {
+  flex: 1 1 340px;
+  max-width: 380px;
+  min-width: 300px;
+  background: var(--cockpit-grey);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.studio__log-empty {
+  display: flex;
+  margin: 0 16px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-panel);
+  font-size: 13px;
+}
+
+.studio__brief {
+  margin: 14px 16px 0;
+  gap: 12px;
+}
+
+.studio__brief-text {
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.studio__prompt {
+  margin-top: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.studio__prompt-row {
+  display: flex;
+  gap: 8px;
+}
+
+.studio__viewer {
+  flex: 999 1 400px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.studio__tabs {
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.studio__overlays {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--text-dim);
+  padding: 8px 0;
+  opacity: 0.6;
+}
+
+.studio__overlays label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.studio__canvas {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.studio__canvas-frame {
+  width: 100%;
+  max-width: 660px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--border);
+  display: flex;
+}
+
+.studio__readout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.studio__inspector {
+  flex: 1 1 300px;
+  max-width: 340px;
+  min-width: 280px;
+  background: var(--cockpit-grey);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 14px 16px;
+}
+
+.studio__group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.studio__group-title {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,29 @@
+[package]
+name = "liverai"
+description = "Livery AI: iRacing livery design studio by Sim RaceCenter"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+# The binary is also called `liverai`; a distinct lib name avoids clashing
+# build artefacts on Windows.
+name = "liverai_lib"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+dirs = "6"
+liverai-engine = { path = "../crates/liverai-engine" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+which = "8"
+
+[dev-dependencies]
+tempfile = "3"

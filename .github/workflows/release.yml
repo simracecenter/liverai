@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Windows installer (draft release)
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      # The tag must equal the version in Cargo.toml [workspace.package] and
+      # package.json. tauri.conf.json has no version of its own; Tauri reads
+      # it from Cargo.
+      - name: Check tag against Cargo.toml and package.json
+        shell: bash
+        env:
+          TAG: ${{ github.ref_name }}
+        run: node scripts/check-version.mjs "$TAG"
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: '. -> target'
+
+      - run: npm ci
+
+      # Builds the frontend (beforeBuildCommand) and the NSIS installer, then
+      # attaches it to a draft release for the owner to review and publish.
+      - uses: tauri-apps/tauri-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: v__VERSION__
+          releaseName: 'Livery AI v__VERSION__'
+          releaseBody: 'Windows installer for Livery AI. Unsigned build: Windows SmartScreen shows a warning on first run.'
+          releaseDraft: true
+          prerelease: false

@@ -1,0 +1,374 @@
+{
+  "schema": "panels/0.1",
+  "car": "caterham_caterham420r",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "total_paintable_px": 3573273,
+  "confirmed_paintable_px": 2961992,
+  "confirmed_coverage_ratio": 0.8289,
+  "uv_up_zero_deg": "-y (top of canvas)",
+  "panels": [
+    {
+      "id": "p001",
+      "bbox": [
+        180,
+        1573,
+        2034,
+        2048
+      ],
+      "area_px": 472335,
+      "calibration_hex": "#EB2F2F",
+      "label": "body_flank_lower_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p002",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p002",
+      "bbox": [
+        180,
+        470,
+        2034,
+        928
+      ],
+      "area_px": 433166,
+      "calibration_hex": "#5E87EB",
+      "label": "body_flank_lower_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p001",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p003",
+      "bbox": [
+        379,
+        935,
+        1044,
+        1619
+      ],
+      "area_px": 335830,
+      "calibration_hex": "#80BF26",
+      "label": "bonnet_main_hood",
+      "up_angle_deg": 90,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p004",
+      "bbox": [
+        1376,
+        15,
+        2020,
+        553
+      ],
+      "area_px": 249103,
+      "calibration_hex": "#EB5ED9",
+      "label": "cockpit_tub_tonneau_surround",
+      "up_angle_deg": 270,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p005",
+      "bbox": [
+        1212,
+        911,
+        1570,
+        1608
+      ],
+      "area_px": 219561,
+      "calibration_hex": "#2FEBCB",
+      "label": "rear_panel_transom",
+      "up_angle_deg": 90,
+      "forward": "-z",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p006",
+      "bbox": [
+        508,
+        249,
+        1389,
+        517
+      ],
+      "area_px": 201565,
+      "calibration_hex": "#BF8B4D",
+      "label": "rear_wing_fender_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p007",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p007",
+      "bbox": [
+        508,
+        0,
+        1389,
+        260
+      ],
+      "area_px": 199418,
+      "calibration_hex": "#5E2FEB",
+      "label": "rear_wing_fender_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p006",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p008",
+      "bbox": [
+        0,
+        1045,
+        409,
+        1476
+      ],
+      "area_px": 117907,
+      "calibration_hex": "#64EB5E",
+      "label": "nosecone_front_cowl",
+      "up_angle_deg": 90,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p009",
+      "bbox": [
+        1552,
+        948,
+        1806,
+        1534
+      ],
+      "area_px": 103550,
+      "calibration_hex": "#BF2659",
+      "label": "rear_deck_boot_lid",
+      "up_angle_deg": 90,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p010",
+      "bbox": [
+        1028,
+        935,
+        1206,
+        1586
+      ],
+      "area_px": 94041,
+      "calibration_hex": "#5EB6EB",
+      "label": "scuttle_cowl_windscreen_base",
+      "up_angle_deg": 90,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p011",
+      "bbox": [
+        31,
+        43,
+        514,
+        245
+      ],
+      "area_px": 91302,
+      "calibration_hex": "#DBEB2F",
+      "label": "cycle_wing_front_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p012",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p012",
+      "bbox": [
+        31,
+        263,
+        514,
+        465
+      ],
+      "area_px": 91273,
+      "calibration_hex": "#A74DBF",
+      "label": "cycle_wing_front_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p011",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p013",
+      "bbox": [
+        398,
+        1600,
+        1037,
+        1784
+      ],
+      "area_px": 87366,
+      "calibration_hex": "#2FEB8C",
+      "label": "bonnet_side_flank_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p014",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p014",
+      "bbox": [
+        398,
+        737,
+        1037,
+        885
+      ],
+      "area_px": 75457,
+      "calibration_hex": "#EB7B5E",
+      "label": "bonnet_side_flank_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p013",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p015",
+      "bbox": [
+        2,
+        1639,
+        404,
+        2046
+      ],
+      "area_px": 64385,
+      "calibration_hex": "#2633BF",
+      "label": "nosecone_lower_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p016",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p016",
+      "bbox": [
+        25,
+        523,
+        404,
+        882
+      ],
+      "area_px": 63856,
+      "calibration_hex": "#93EB5E",
+      "label": "nosecone_lower_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p015",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p021",
+      "bbox": [
+        1011,
+        723,
+        1264,
+        892
+      ],
+      "area_px": 31073,
+      "calibration_hex": "#26BF3F",
+      "label": "scuttle_side_flank_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p022",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    },
+    {
+      "id": "p022",
+      "bbox": [
+        1020,
+        1606,
+        1264,
+        1798
+      ],
+      "area_px": 30804,
+      "calibration_hex": "#EB5E70",
+      "label": "scuttle_side_flank_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p021",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/caterham_caterham420r/calibration/preview_uv.png",
+        "cars/caterham_caterham420r/calibration/showroom/calibration_sheet.png"
+      ]
+    }
+  ]
+}

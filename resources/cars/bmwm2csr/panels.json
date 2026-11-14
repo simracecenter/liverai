@@ -1,0 +1,984 @@
+{
+  "schema": "panels/0.1",
+  "car": "bmwm2csr",
+  "paint_folder": "bmwm2csr",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "total_paintable_px": 2766477,
+  "confirmed_paintable_px": 2502861,
+  "confirmed_coverage_ratio": 0.9047,
+  "uv_up_zero_deg": "-y (top of canvas)",
+  "panels": [
+    {
+      "id": "p001",
+      "bbox": [
+        252,
+        437,
+        796,
+        1131
+      ],
+      "area_px": 275010,
+      "calibration_hex": "#EB2F2F",
+      "label": "hood",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p002",
+      "bbox": [
+        848,
+        524,
+        1398,
+        1017
+      ],
+      "area_px": 230236,
+      "calibration_hex": "#5E87EB",
+      "label": "roof",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p003",
+      "bbox": [
+        1773,
+        261,
+        2048,
+        1370
+      ],
+      "area_px": 196488,
+      "calibration_hex": "#80BF26",
+      "label": "rear_bumper_fascia",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p004",
+      "bbox": [
+        1136,
+        109,
+        1774,
+        533
+      ],
+      "area_px": 132915,
+      "calibration_hex": "#EB5ED9",
+      "label": "rear_quarter_upper_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p005",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p005",
+      "bbox": [
+        1144,
+        1038,
+        1773,
+        1460
+      ],
+      "area_px": 130988,
+      "calibration_hex": "#2FEBCB",
+      "label": "rear_quarter_upper_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p004",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p006",
+      "bbox": [
+        674,
+        1177,
+        1186,
+        1469
+      ],
+      "area_px": 127167,
+      "calibration_hex": "#BF8B4D",
+      "label": "door_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p007",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p007",
+      "bbox": [
+        674,
+        99,
+        1186,
+        390
+      ],
+      "area_px": 127125,
+      "calibration_hex": "#5E2FEB",
+      "label": "door_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p006",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p008",
+      "bbox": [
+        0,
+        1297,
+        284,
+        2048
+      ],
+      "area_px": 92425,
+      "calibration_hex": "#64EB5E",
+      "label": "front_bumper_lower_splitter",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p009",
+      "bbox": [
+        1326,
+        510,
+        1600,
+        1073
+      ],
+      "area_px": 89186,
+      "calibration_hex": "#BF2659",
+      "label": "rear_window_and_trunk_upper",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p010",
+      "bbox": [
+        579,
+        1427,
+        1529,
+        1743
+      ],
+      "area_px": 86125,
+      "calibration_hex": "#5EB6EB",
+      "label": "rocker_sill_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p014",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p011",
+      "bbox": [
+        432,
+        1554,
+        673,
+        2028
+      ],
+      "area_px": 83112,
+      "calibration_hex": "#DBEB2F",
+      "label": "rear_wing_mainplane",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p012",
+      "bbox": [
+        246,
+        1131,
+        741,
+        1471
+      ],
+      "area_px": 67201,
+      "calibration_hex": "#A74DBF",
+      "label": "front_fender_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p013",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p013",
+      "bbox": [
+        273,
+        97,
+        742,
+        437
+      ],
+      "area_px": 65684,
+      "calibration_hex": "#2FEB8C",
+      "label": "front_fender_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p012",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p014",
+      "bbox": [
+        579,
+        26,
+        1346,
+        134
+      ],
+      "area_px": 65002,
+      "calibration_hex": "#EB7B5E",
+      "label": "rocker_sill_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p010",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p015",
+      "bbox": [
+        1386,
+        32,
+        2019,
+        166
+      ],
+      "area_px": 52151,
+      "calibration_hex": "#2633BF",
+      "label": "rear_window_header_banner",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p016",
+      "bbox": [
+        17,
+        898,
+        348,
+        1268
+      ],
+      "area_px": 49167,
+      "calibration_hex": "#93EB5E",
+      "label": "front_bumper_side_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p017",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p017",
+      "bbox": [
+        19,
+        300,
+        349,
+        670
+      ],
+      "area_px": 49053,
+      "calibration_hex": "#EB2FAC",
+      "label": "front_bumper_side_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p016",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p018",
+      "bbox": [
+        1781,
+        1304,
+        2047,
+        1691
+      ],
+      "area_px": 44981,
+      "calibration_hex": "#4DBBBF",
+      "label": "rear_diffuser_valence",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p019",
+      "bbox": [
+        202,
+        1412,
+        418,
+        1941
+      ],
+      "area_px": 42578,
+      "calibration_hex": "#EBBB2F",
+      "label": "front_bumper_grille_bar",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p020",
+      "bbox": [
+        708,
+        996,
+        1251,
+        1160
+      ],
+      "area_px": 38704,
+      "calibration_hex": "#9E5EEB",
+      "label": "a_pillar_and_roof_rail_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p021",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p021",
+      "bbox": [
+        707,
+        408,
+        1254,
+        571
+      ],
+      "area_px": 38554,
+      "calibration_hex": "#26BF3F",
+      "label": "a_pillar_and_roof_rail_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p020",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p022",
+      "bbox": [
+        1102,
+        1709,
+        1471,
+        2017
+      ],
+      "area_px": 38082,
+      "calibration_hex": "#EB5E70",
+      "label": "mirror_housing_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p043",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p023",
+      "bbox": [
+        751,
+        549,
+        845,
+        1018
+      ],
+      "area_px": 36681,
+      "calibration_hex": "#2F7EEB",
+      "label": "windshield_header_banner",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p024",
+      "bbox": [
+        1471,
+        1619,
+        1888,
+        1901
+      ],
+      "area_px": 36623,
+      "calibration_hex": "#9EBF4D",
+      "label": "rear_wing_endplate_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p030",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p025",
+      "bbox": [
+        1407,
+        1410,
+        1831,
+        1653
+      ],
+      "area_px": 35877,
+      "calibration_hex": "#EA2FEB",
+      "label": "island_025",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p026",
+      "bbox": [
+        626,
+        1675,
+        976,
+        1884
+      ],
+      "area_px": 33536,
+      "calibration_hex": "#5EEBC1",
+      "label": "front_kidney_grille_surround_upper",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p027",
+      "bbox": [
+        93,
+        113,
+        538,
+        209
+      ],
+      "area_px": 31834,
+      "calibration_hex": "#BF6526",
+      "label": "front_windshield_lower_banner",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p028",
+      "bbox": [
+        92,
+        38,
+        537,
+        134
+      ],
+      "area_px": 31823,
+      "calibration_hex": "#6F5EEB",
+      "label": "front_windshield_upper_banner",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p029",
+      "bbox": [
+        1120,
+        1008,
+        1380,
+        1203
+      ],
+      "area_px": 25827,
+      "calibration_hex": "#4FEB2F",
+      "label": "c_pillar_quarter_window_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p040",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p030",
+      "bbox": [
+        1436,
+        1909,
+        1888,
+        2044
+      ],
+      "area_px": 25644,
+      "calibration_hex": "#BF4D82",
+      "label": "rear_wing_endplate_outer_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p024",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p031",
+      "bbox": [
+        11,
+        636,
+        212,
+        927
+      ],
+      "area_px": 22308,
+      "calibration_hex": "#2FBCEB",
+      "label": "front_bumper_center_nose",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p032",
+      "bbox": [
+        1597,
+        781,
+        1709,
+        1037
+      ],
+      "area_px": 21187,
+      "calibration_hex": "#EBE45E",
+      "label": "trunk_decklid_left_half",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p033",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p033",
+      "bbox": [
+        1597,
+        531,
+        1708,
+        784
+      ],
+      "area_px": 21165,
+      "calibration_hex": "#8C26BF",
+      "label": "trunk_decklid_right_half",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p032",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p034",
+      "bbox": [
+        1702,
+        582,
+        1807,
+        785
+      ],
+      "area_px": 19806,
+      "calibration_hex": "#5EEB92",
+      "label": "trunk_vertical_tail_panel_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p035",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p035",
+      "bbox": [
+        1701,
+        784,
+        1807,
+        986
+      ],
+      "area_px": 19678,
+      "calibration_hex": "#EB3E2F",
+      "label": "trunk_vertical_tail_panel_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p034",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p036",
+      "bbox": [
+        1107,
+        1557,
+        1429,
+        1730
+      ],
+      "area_px": 19178,
+      "calibration_hex": "#4D65BF",
+      "label": "island_036",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p037",
+      "bbox": [
+        999,
+        1932,
+        1365,
+        2039
+      ],
+      "area_px": 18942,
+      "calibration_hex": "#8EEB2F",
+      "label": "island_037",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p038",
+      "bbox": [
+        5,
+        797,
+        124,
+        1092
+      ],
+      "area_px": 18615,
+      "calibration_hex": "#EB5ECE",
+      "label": "island_038",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p039",
+      "bbox": [
+        5,
+        473,
+        125,
+        767
+      ],
+      "area_px": 18418,
+      "calibration_hex": "#26BFB2",
+      "label": "island_039",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p040",
+      "bbox": [
+        1161,
+        377,
+        1399,
+        559
+      ],
+      "area_px": 18289,
+      "calibration_hex": "#EBB55E",
+      "label": "c_pillar_quarter_window_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p029",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p041",
+      "bbox": [
+        629,
+        1902,
+        1061,
+        2009
+      ],
+      "area_px": 16845,
+      "calibration_hex": "#6D2FEB",
+      "label": "island_041",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p042",
+      "bbox": [
+        778,
+        1864,
+        989,
+        1963
+      ],
+      "area_px": 13893,
+      "calibration_hex": "#4DBF51",
+      "label": "island_042",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p043",
+      "bbox": [
+        968,
+        1709,
+        1102,
+        1917
+      ],
+      "area_px": 13733,
+      "calibration_hex": "#EB2F5F",
+      "label": "mirror_housing_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p022",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p044",
+      "bbox": [
+        624,
+        1855,
+        792,
+        1964
+      ],
+      "area_px": 13292,
+      "calibration_hex": "#5EABEB",
+      "label": "island_044",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p045",
+      "bbox": [
+        1717,
+        1606,
+        1990,
+        1812
+      ],
+      "area_px": 13048,
+      "calibration_hex": "#A7BF26",
+      "label": "island_045",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p046",
+      "bbox": [
+        845,
+        1557,
+        1107,
+        1724
+      ],
+      "area_px": 13008,
+      "calibration_hex": "#D85EEB",
+      "label": "island_046",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p047",
+      "bbox": [
+        1237,
+        406,
+        1422,
+        529
+      ],
+      "area_px": 12676,
+      "calibration_hex": "#2FEB9B",
+      "label": "island_047",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p048",
+      "bbox": [
+        629,
+        1995,
+        974,
+        2041
+      ],
+      "area_px": 12634,
+      "calibration_hex": "#BF6D4D",
+      "label": "island_048",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p049",
+      "bbox": [
+        1875,
+        1909,
+        2045,
+        2043
+      ],
+      "area_px": 12133,
+      "calibration_hex": "#2F30EB",
+      "label": "rear_wing_endplate_inner_left",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p052",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p050",
+      "bbox": [
+        200,
+        782,
+        275,
+        955
+      ],
+      "area_px": 11094,
+      "calibration_hex": "#88EB5E",
+      "label": "island_050",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p051",
+      "bbox": [
+        200,
+        612,
+        275,
+        785
+      ],
+      "area_px": 10851,
+      "calibration_hex": "#BF2680",
+      "label": "island_051",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p052",
+      "bbox": [
+        1886,
+        1689,
+        2047,
+        1895
+      ],
+      "area_px": 10660,
+      "calibration_hex": "#5EDAEB",
+      "label": "rear_wing_endplate_inner_right",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p049",
+      "confidence": "confirmed",
+      "evidence": []
+    },
+    {
+      "id": "p053",
+      "bbox": [
+        636,
+        1604,
+        851,
+        1773
+      ],
+      "area_px": 10641,
+      "calibration_hex": "#EBCA2F",
+      "label": "island_053",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p054",
+      "bbox": [
+        844,
+        1085,
+        985,
+        1179
+      ],
+      "area_px": 7814,
+      "calibration_hex": "#8A4DBF",
+      "label": "island_054",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p055",
+      "bbox": [
+        844,
+        389,
+        985,
+        481
+      ],
+      "area_px": 7725,
+      "calibration_hex": "#2FEB5D",
+      "label": "island_055",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p056",
+      "bbox": [
+        1305,
+        1084,
+        1421,
+        1168
+      ],
+      "area_px": 6537,
+      "calibration_hex": "#EB5E65",
+      "label": "island_056",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p057",
+      "bbox": [
+        982,
+        1584,
+        1049,
+        1633
+      ],
+      "area_px": 2528,
+      "calibration_hex": "#265ABF",
+      "label": "island_057",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    }
+  ]
+}

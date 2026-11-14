@@ -1,0 +1,16 @@
+{
+  "schema": "cars-index/1",
+  "cars": [
+    { "id": "porsche992rgt3", "name": "Porsche 911 GT3 R (992)" },
+    { "id": "ferrari296gt3", "name": "Ferrari 296 GT3" },
+    { "id": "mclaren720sgt3", "name": "McLaren 720S GT3 EVO" },
+    { "id": "fordmustanggt3", "name": "Ford Mustang GT3" },
+    { "id": "fordmustanggt4", "name": "Ford Mustang GT4" },
+    { "id": "porsche718gt4", "name": "Porsche 718 Cayman GT4" },
+    { "id": "porsche9922cup", "name": "Porsche 911 Cup (992.2)" },
+    { "id": "bmwm2csr", "name": "BMW M2 CS Racing" },
+    { "id": "mx5_mx52016", "name": "Global Mazda MX-5 Cup" },
+    { "id": "caterham_caterham420r", "name": "Caterham 420R" },
+    { "id": "superformulalights324", "name": "Super Formula Lights 324" }
+  ]
+}

@@ -1,0 +1,192 @@
+.cars {
+  min-height: 0;
+}
+
+.cars__columns {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cars__list {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background: var(--cockpit-grey);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.cars__list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.cars__list > .cars__list-title {
+  padding: 14px 16px 10px;
+}
+
+.cars__items {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.cars__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--text);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  padding: 11px 16px;
+}
+
+.cars__item .mono {
+  color: var(--text-dim);
+}
+
+.cars__item:hover {
+  background: rgb(5 7 10 / 50%);
+}
+
+.cars__item[aria-current='true'] {
+  background: var(--race-control);
+  border-left-color: var(--telemetry-blue);
+  font-weight: 500;
+}
+
+.cars__item[aria-current='true'] .mono {
+  color: var(--telemetry-blue);
+}
+
+.cars__add {
+  margin-top: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cars__add .note {
+  font-size: 12px;
+}
+
+.cars__map {
+  flex: 999 1 420px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cars__map-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cars__map-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.cars__map-frame {
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  border: 1px dashed var(--border-strong);
+  display: flex;
+}
+
+.cars__map-note {
+  max-width: 600px;
+}
+
+.cars__atlas {
+  flex: 1 1 340px;
+  max-width: 420px;
+  background: var(--cockpit-grey);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  gap: 10px;
+  min-height: 0;
+}
+
+.cars__table-wrap {
+  flex: 1 1 240px;
+  min-height: 240px;
+  max-height: calc(100vh - 420px);
+  overflow: auto;
+}
+
+.cars__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.cars__table th {
+  position: sticky;
+  top: 0;
+  background: var(--cockpit-grey);
+  text-align: left;
+  padding: 6px 4px;
+  font-family: var(--font-ui);
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.cars__table td {
+  padding: 7px 4px;
+  border-top: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+
+.cars__table td:not(:nth-child(2)) {
+  white-space: nowrap;
+}
+
+.cars__table tbody tr {
+  cursor: pointer;
+}
+
+.cars__table tbody tr[aria-selected='true'] {
+  background: var(--race-control);
+}
+
+.cars__panel-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.cars__swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.cars__selected {
+  padding: 12px;
+  gap: 6px;
+  font-size: 13px;
+}

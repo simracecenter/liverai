@@ -1,0 +1,1072 @@
+{
+  "schema": "panels/0.1",
+  "car": "fordmustanggt3",
+  "paint_folder": "fordmustanggt3",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "total_paintable_px": 3544328,
+  "confirmed_paintable_px": 3059066,
+  "confirmed_coverage_ratio": 0.8631,
+  "uv_up_zero_deg": "-y (top of canvas)",
+  "panels": [
+    {
+      "id": "p001",
+      "bbox": [
+        726,
+        1300,
+        2048,
+        1855
+      ],
+      "area_px": 393703,
+      "calibration_hex": "#EB2F2F",
+      "label": "door_and_rear_quarter_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p002",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p002",
+      "bbox": [
+        726,
+        193,
+        2048,
+        747
+      ],
+      "area_px": 389388,
+      "calibration_hex": "#5E87EB",
+      "label": "door_and_rear_quarter_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p001",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p003",
+      "bbox": [
+        345,
+        689,
+        974,
+        1357
+      ],
+      "area_px": 327430,
+      "calibration_hex": "#80BF26",
+      "label": "hood",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p004",
+      "bbox": [
+        1048,
+        773,
+        1532,
+        1279
+      ],
+      "area_px": 210022,
+      "calibration_hex": "#EB5ED9",
+      "label": "roof",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/top.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p005",
+      "bbox": [
+        0,
+        509,
+        271,
+        1537
+      ],
+      "area_px": 174526,
+      "calibration_hex": "#2FEBCB",
+      "label": "front_bumper",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p006",
+      "bbox": [
+        1479,
+        747,
+        1876,
+        1300
+      ],
+      "area_px": 169040,
+      "calibration_hex": "#BF8B4D",
+      "label": "trunk_decklid",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p007",
+      "bbox": [
+        1319,
+        1839,
+        2037,
+        2043
+      ],
+      "area_px": 129227,
+      "calibration_hex": "#5E2FEB",
+      "label": "rear_wing_underside",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p008",
+      "bbox": [
+        608,
+        1851,
+        1322,
+        2043
+      ],
+      "area_px": 121427,
+      "calibration_hex": "#64EB5E",
+      "label": "rear_wing_top",
+      "up_angle_deg": 180,
+      "forward": "+y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p009",
+      "bbox": [
+        0,
+        1463,
+        609,
+        1878
+      ],
+      "area_px": 102150,
+      "calibration_hex": "#BF2659",
+      "label": "front_fender_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p010",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p010",
+      "bbox": [
+        0,
+        169,
+        608,
+        584
+      ],
+      "area_px": 98552,
+      "calibration_hex": "#5EB6EB",
+      "label": "front_fender_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p009",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p011",
+      "bbox": [
+        1857,
+        641,
+        2046,
+        1406
+      ],
+      "area_px": 87999,
+      "calibration_hex": "#DBEB2F",
+      "label": "rear_bumper_upper_fascia",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p012",
+      "bbox": [
+        974,
+        0,
+        2040,
+        173
+      ],
+      "area_px": 79283,
+      "calibration_hex": "#A74DBF",
+      "label": "rear_bumper_lower_valence",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p013",
+      "bbox": [
+        184,
+        571,
+        483,
+        1476
+      ],
+      "area_px": 74440,
+      "calibration_hex": "#2FEB8C",
+      "label": "front_splitter_and_lower_grille",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p014",
+      "bbox": [
+        920,
+        751,
+        1070,
+        1296
+      ],
+      "area_px": 66059,
+      "calibration_hex": "#EB7B5E",
+      "label": "windshield_header_banner",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p015",
+      "bbox": [
+        1774,
+        284,
+        2040,
+        507
+      ],
+      "area_px": 37442,
+      "calibration_hex": "#2633BF",
+      "label": "rear_bumper_side_corner_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p018",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p016",
+      "bbox": [
+        203,
+        103,
+        394,
+        391
+      ],
+      "area_px": 36726,
+      "calibration_hex": "#93EB5E",
+      "label": "front_fender_louvre_insert_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p017",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p017",
+      "bbox": [
+        203,
+        1656,
+        394,
+        1944
+      ],
+      "area_px": 36715,
+      "calibration_hex": "#EB2FAC",
+      "label": "front_fender_louvre_insert_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p016",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p018",
+      "bbox": [
+        1774,
+        1540,
+        2040,
+        1763
+      ],
+      "area_px": 34915,
+      "calibration_hex": "#4DBBBF",
+      "label": "rear_bumper_side_corner_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p015",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p019",
+      "bbox": [
+        547,
+        1436,
+        727,
+        1766
+      ],
+      "area_px": 34539,
+      "calibration_hex": "#EBBB2F",
+      "label": "front_fender_rear_vent_lower_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p022",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p020",
+      "bbox": [
+        608,
+        73,
+        1010,
+        202
+      ],
+      "area_px": 32294,
+      "calibration_hex": "#9E5EEB",
+      "label": "island_020",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p021",
+      "bbox": [
+        608,
+        0,
+        1012,
+        93
+      ],
+      "area_px": 32157,
+      "calibration_hex": "#26BF3F",
+      "label": "island_021",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p022",
+      "bbox": [
+        576,
+        281,
+        727,
+        611
+      ],
+      "area_px": 31794,
+      "calibration_hex": "#EB5E70",
+      "label": "front_fender_rear_vent_lower_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p019",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p023",
+      "bbox": [
+        1554,
+        62,
+        1806,
+        235
+      ],
+      "area_px": 31439,
+      "calibration_hex": "#2F7EEB",
+      "label": "island_023",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p024",
+      "bbox": [
+        1059,
+        633,
+        1495,
+        783
+      ],
+      "area_px": 30336,
+      "calibration_hex": "#9EBF4D",
+      "label": "roof_rail_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p025",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p025",
+      "bbox": [
+        1059,
+        1264,
+        1494,
+        1414
+      ],
+      "area_px": 29292,
+      "calibration_hex": "#EA2FEB",
+      "label": "roof_rail_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p024",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p026",
+      "bbox": [
+        274,
+        761,
+        371,
+        1286
+      ],
+      "area_px": 28719,
+      "calibration_hex": "#5EEBC1",
+      "label": "hood_leading_nose_bar",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p027",
+      "bbox": [
+        628,
+        1745,
+        960,
+        1880
+      ],
+      "area_px": 28369,
+      "calibration_hex": "#BF6526",
+      "label": "island_027",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p028",
+      "bbox": [
+        331,
+        1333,
+        749,
+        1472
+      ],
+      "area_px": 27936,
+      "calibration_hex": "#6F5EEB",
+      "label": "hood_extractor_vent_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p030",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p029",
+      "bbox": [
+        634,
+        172,
+        956,
+        302
+      ],
+      "area_px": 27870,
+      "calibration_hex": "#4FEB2F",
+      "label": "island_029",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p030",
+      "bbox": [
+        331,
+        575,
+        749,
+        714
+      ],
+      "area_px": 27816,
+      "calibration_hex": "#BF4D82",
+      "label": "hood_extractor_vent_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p028",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p031",
+      "bbox": [
+        3,
+        1848,
+        252,
+        2046
+      ],
+      "area_px": 27695,
+      "calibration_hex": "#2FBCEB",
+      "label": "rear_quarter_brake_scoop_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p033",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p032",
+      "bbox": [
+        1956,
+        812,
+        2048,
+        1231
+      ],
+      "area_px": 27183,
+      "calibration_hex": "#EBE45E",
+      "label": "rear_bumper_diffuser_lip",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p033",
+      "bbox": [
+        3,
+        19,
+        252,
+        199
+      ],
+      "area_px": 26641,
+      "calibration_hex": "#8C26BF",
+      "label": "rear_quarter_brake_scoop_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p031",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p034",
+      "bbox": [
+        743,
+        1333,
+        1081,
+        1457
+      ],
+      "area_px": 25689,
+      "calibration_hex": "#5EEB92",
+      "label": "hood_inner_vent_wall_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p035",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p035",
+      "bbox": [
+        743,
+        590,
+        1081,
+        714
+      ],
+      "area_px": 25634,
+      "calibration_hex": "#EB3E2F",
+      "label": "hood_inner_vent_wall_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p034",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png",
+        "cars/fordmustanggt3/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p036",
+      "bbox": [
+        0,
+        1670,
+        205,
+        1870
+      ],
+      "area_px": 23703,
+      "calibration_hex": "#4D65BF",
+      "label": "front_fender_rear_vent_upper_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p037",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p037",
+      "bbox": [
+        0,
+        177,
+        205,
+        377
+      ],
+      "area_px": 21346,
+      "calibration_hex": "#8EEB2F",
+      "label": "front_fender_rear_vent_upper_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p036",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p038",
+      "bbox": [
+        1357,
+        67,
+        1572,
+        223
+      ],
+      "area_px": 20526,
+      "calibration_hex": "#EB5ECE",
+      "label": "island_038",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p039",
+      "bbox": [
+        1572,
+        1697,
+        1777,
+        1840
+      ],
+      "area_px": 19027,
+      "calibration_hex": "#26BFB2",
+      "label": "rear_wing_endplate_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p041",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p040",
+      "bbox": [
+        1092,
+        1349,
+        1310,
+        1470
+      ],
+      "area_px": 17405,
+      "calibration_hex": "#EBB55E",
+      "label": "mirror_housing_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p046",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p041",
+      "bbox": [
+        1574,
+        240,
+        1777,
+        350
+      ],
+      "area_px": 17222,
+      "calibration_hex": "#6D2FEB",
+      "label": "rear_wing_endplate_outer_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p039",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p042",
+      "bbox": [
+        1569,
+        1580,
+        1757,
+        1695
+      ],
+      "area_px": 16432,
+      "calibration_hex": "#4DBF51",
+      "label": "rear_wing_endplate_inner_right",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p043",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_left.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p043",
+      "bbox": [
+        1569,
+        352,
+        1757,
+        467
+      ],
+      "area_px": 16429,
+      "calibration_hex": "#EB2F5F",
+      "label": "rear_wing_endplate_inner_left",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p042",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p044",
+      "bbox": [
+        265,
+        1981,
+        596,
+        2048
+      ],
+      "area_px": 15803,
+      "calibration_hex": "#5EABEB",
+      "label": "island_044",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p045",
+      "bbox": [
+        265,
+        0,
+        596,
+        67
+      ],
+      "area_px": 15751,
+      "calibration_hex": "#A7BF26",
+      "label": "island_045",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p046",
+      "bbox": [
+        1092,
+        579,
+        1312,
+        697
+      ],
+      "area_px": 15184,
+      "calibration_hex": "#D85EEB",
+      "label": "mirror_housing_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p040",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/fordmustanggt3/calibration/showroom/side_right.png",
+        "cars/fordmustanggt3/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p047",
+      "bbox": [
+        256,
+        39,
+        589,
+        138
+      ],
+      "area_px": 13720,
+      "calibration_hex": "#2FEB9B",
+      "label": "island_047",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p048",
+      "bbox": [
+        256,
+        1909,
+        589,
+        2009
+      ],
+      "area_px": 13690,
+      "calibration_hex": "#BF6D4D",
+      "label": "island_048",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p049",
+      "bbox": [
+        425,
+        85,
+        616,
+        189
+      ],
+      "area_px": 10705,
+      "calibration_hex": "#2F30EB",
+      "label": "island_049",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p050",
+      "bbox": [
+        425,
+        1858,
+        609,
+        1949
+      ],
+      "area_px": 10265,
+      "calibration_hex": "#88EB5E",
+      "label": "island_050",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p051",
+      "bbox": [
+        1180,
+        54,
+        1327,
+        158
+      ],
+      "area_px": 9952,
+      "calibration_hex": "#BF2680",
+      "label": "island_051",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p052",
+      "bbox": [
+        265,
+        530,
+        465,
+        615
+      ],
+      "area_px": 9706,
+      "calibration_hex": "#5EDAEB",
+      "label": "island_052",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p053",
+      "bbox": [
+        265,
+        1432,
+        465,
+        1517
+      ],
+      "area_px": 9680,
+      "calibration_hex": "#EBCA2F",
+      "label": "island_053",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p054",
+      "bbox": [
+        903,
+        757,
+        953,
+        1290
+      ],
+      "area_px": 9219,
+      "calibration_hex": "#8A4DBF",
+      "label": "island_054",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p055",
+      "bbox": [
+        0,
+        1024,
+        99,
+        1161
+      ],
+      "area_px": 8877,
+      "calibration_hex": "#2FEB5D",
+      "label": "island_055",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    }
+  ]
+}

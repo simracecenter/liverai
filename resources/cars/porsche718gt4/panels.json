@@ -1,0 +1,1241 @@
+{
+  "schema": "panels/0.1",
+  "car": "porsche718gt4",
+  "paint_folder": "porsche718gt4",
+  "canvas": [
+    2048,
+    2048
+  ],
+  "total_paintable_px": 3161279,
+  "confirmed_paintable_px": 2564930,
+  "confirmed_coverage_ratio": 0.8114,
+  "uv_up_zero_deg": "-y (top of canvas)",
+  "panels": [
+    {
+      "id": "p001",
+      "bbox": [
+        361,
+        916,
+        939,
+        1624
+      ],
+      "area_px": 240910,
+      "calibration_hex": "#EB2F2F",
+      "label": "hood",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/front.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_left.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_right.png",
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p002",
+      "bbox": [
+        968,
+        1,
+        2048,
+        347
+      ],
+      "area_px": 196033,
+      "calibration_hex": "#5E87EB",
+      "label": "rear_bumper_upper",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/rear.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png",
+        "cars/porsche718gt4/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p003",
+      "bbox": [
+        122,
+        672,
+        419,
+        1833
+      ],
+      "area_px": 177332,
+      "calibration_hex": "#80BF26",
+      "label": "front_bumper",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/front.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_left.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_right.png",
+        "cars/porsche718gt4/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p004",
+      "bbox": [
+        1089,
+        953,
+        1525,
+        1532
+      ],
+      "area_px": 143838,
+      "calibration_hex": "#EB5ED9",
+      "label": "roof",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png",
+        "cars/porsche718gt4/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p005",
+      "bbox": [
+        912,
+        1604,
+        1447,
+        1975
+      ],
+      "area_px": 142326,
+      "calibration_hex": "#2FEBCB",
+      "label": "door_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p006",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_left.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p006",
+      "bbox": [
+        912,
+        565,
+        1447,
+        928
+      ],
+      "area_px": 139044,
+      "calibration_hex": "#BF8B4D",
+      "label": "door_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p005",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_right.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_right.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p007",
+      "bbox": [
+        1426,
+        622,
+        2032,
+        1017
+      ],
+      "area_px": 115830,
+      "calibration_hex": "#5E2FEB",
+      "label": "rear_quarter_upper_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p008",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_right.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png",
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p008",
+      "bbox": [
+        1425,
+        1521,
+        2032,
+        1853
+      ],
+      "area_px": 114011,
+      "calibration_hex": "#64EB5E",
+      "label": "rear_quarter_upper_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p007",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_left.png",
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p009",
+      "bbox": [
+        0,
+        1,
+        683,
+        242
+      ],
+      "area_px": 106486,
+      "calibration_hex": "#BF2659",
+      "label": "rear_wing_underside",
+      "up_angle_deg": 0,
+      "forward": "-y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/rear.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p010",
+      "bbox": [
+        426,
+        1600,
+        973,
+        1979
+      ],
+      "area_px": 100532,
+      "calibration_hex": "#5EB6EB",
+      "label": "front_fender_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p015",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_left.png",
+        "cars/porsche718gt4/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p011",
+      "bbox": [
+        1,
+        231,
+        697,
+        514
+      ],
+      "area_px": 95473,
+      "calibration_hex": "#DBEB2F",
+      "label": "rear_wing_top",
+      "up_angle_deg": 180,
+      "forward": "+y",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p012",
+      "bbox": [
+        789,
+        452,
+        1701,
+        758
+      ],
+      "area_px": 82691,
+      "calibration_hex": "#A74DBF",
+      "label": "rocker_and_lower_quarter_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p013",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_right.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p013",
+      "bbox": [
+        852,
+        1782,
+        1658,
+        2041
+      ],
+      "area_px": 77815,
+      "calibration_hex": "#2FEB8C",
+      "label": "rocker_and_lower_quarter_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p012",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p014",
+      "bbox": [
+        1,
+        700,
+        213,
+        1761
+      ],
+      "area_px": 75654,
+      "calibration_hex": "#EB7B5E",
+      "label": "front_splitter_lip",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/front.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_left.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p015",
+      "bbox": [
+        410,
+        650,
+        859,
+        950
+      ],
+      "area_px": 70916,
+      "calibration_hex": "#2633BF",
+      "label": "front_fender_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p010",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_right.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_right.png",
+        "cars/porsche718gt4/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p016",
+      "bbox": [
+        1254,
+        127,
+        1694,
+        383
+      ],
+      "area_px": 58595,
+      "calibration_hex": "#93EB5E",
+      "label": "rear_bumper_lower_valence",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p017",
+      "bbox": [
+        1002,
+        921,
+        1156,
+        1614
+      ],
+      "area_px": 50576,
+      "calibration_hex": "#EB2FAC",
+      "label": "windshield_header_banner",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/front.png",
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p018",
+      "bbox": [
+        1521,
+        1014,
+        1949,
+        1528
+      ],
+      "area_px": 50564,
+      "calibration_hex": "#4DBBBF",
+      "label": "rear_hatch_frame",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p019",
+      "bbox": [
+        891,
+        903,
+        1018,
+        1637
+      ],
+      "area_px": 50426,
+      "calibration_hex": "#EBBB2F",
+      "label": "windshield_wiper_cowl",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png",
+        "cars/porsche718gt4/calibration/showroom/front.png"
+      ]
+    },
+    {
+      "id": "p020",
+      "bbox": [
+        177,
+        1816,
+        593,
+        2044
+      ],
+      "area_px": 46611,
+      "calibration_hex": "#9E5EEB",
+      "label": "mirror_left_and_wheel_arch_trim",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/front_34_left.png",
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p021",
+      "bbox": [
+        1219,
+        1262,
+        1453,
+        1466
+      ],
+      "area_px": 45875,
+      "calibration_hex": "#26BF3F",
+      "label": "roof_escape_hatch",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p022",
+      "bbox": [
+        1921,
+        1060,
+        2045,
+        1525
+      ],
+      "area_px": 42696,
+      "calibration_hex": "#EB5E70",
+      "label": "rear_ducktail_spoiler",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/rear.png",
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p023",
+      "bbox": [
+        1041,
+        1517,
+        1435,
+        1693
+      ],
+      "area_px": 38978,
+      "calibration_hex": "#2F7EEB",
+      "label": "a_pillar_and_roof_rail_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/front.png",
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p024",
+      "bbox": [
+        0,
+        1636,
+        191,
+        2043
+      ],
+      "area_px": 32355,
+      "calibration_hex": "#9EBF4D",
+      "label": "island_024",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p025",
+      "bbox": [
+        777,
+        561,
+        973,
+        919
+      ],
+      "area_px": 32121,
+      "calibration_hex": "#EA2FEB",
+      "label": "front_fender_rear_pillar_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_right.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p026",
+      "bbox": [
+        569,
+        80,
+        864,
+        329
+      ],
+      "area_px": 30679,
+      "calibration_hex": "#5EEBC1",
+      "label": "island_026",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p027",
+      "bbox": [
+        693,
+        256,
+        939,
+        491
+      ],
+      "area_px": 30084,
+      "calibration_hex": "#BF6526",
+      "label": "island_027",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p028",
+      "bbox": [
+        1755,
+        587,
+        2047,
+        783
+      ],
+      "area_px": 28848,
+      "calibration_hex": "#6F5EEB",
+      "label": "island_028",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p029",
+      "bbox": [
+        1799,
+        1754,
+        2047,
+        1953
+      ],
+      "area_px": 28408,
+      "calibration_hex": "#4FEB2F",
+      "label": "island_029",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p030",
+      "bbox": [
+        1657,
+        1070,
+        1828,
+        1244
+      ],
+      "area_px": 27016,
+      "calibration_hex": "#BF4D82",
+      "label": "interior_rear_deck_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p034",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p031",
+      "bbox": [
+        1,
+        503,
+        195,
+        857
+      ],
+      "area_px": 26651,
+      "calibration_hex": "#2FBCEB",
+      "label": "island_031",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p032",
+      "bbox": [
+        1562,
+        270,
+        2048,
+        392
+      ],
+      "area_px": 26123,
+      "calibration_hex": "#EBE45E",
+      "label": "rear_spoiler_trailing_lip",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/rear.png"
+      ]
+    },
+    {
+      "id": "p033",
+      "bbox": [
+        1158,
+        948,
+        1566,
+        1040
+      ],
+      "area_px": 25617,
+      "calibration_hex": "#8C26BF",
+      "label": "roof_rail_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p039",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png",
+        "cars/porsche718gt4/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p034",
+      "bbox": [
+        1669,
+        1252,
+        1823,
+        1449
+      ],
+      "area_px": 25368,
+      "calibration_hex": "#5EEB92",
+      "label": "interior_rear_deck_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p030",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p035",
+      "bbox": [
+        48,
+        503,
+        545,
+        686
+      ],
+      "area_px": 25289,
+      "calibration_hex": "#EB3E2F",
+      "label": "island_035",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p036",
+      "bbox": [
+        1583,
+        1065,
+        1910,
+        1477
+      ],
+      "area_px": 25136,
+      "calibration_hex": "#4D65BF",
+      "label": "island_036",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p037",
+      "bbox": [
+        1032,
+        318,
+        1282,
+        509
+      ],
+      "area_px": 24616,
+      "calibration_hex": "#8EEB2F",
+      "label": "island_037",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p038",
+      "bbox": [
+        584,
+        1845,
+        829,
+        2043
+      ],
+      "area_px": 23679,
+      "calibration_hex": "#EB5ECE",
+      "label": "side_intake_scoop_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p043",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p039",
+      "bbox": [
+        1200,
+        1500,
+        1565,
+        1592
+      ],
+      "area_px": 23521,
+      "calibration_hex": "#26BFB2",
+      "label": "roof_rail_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p033",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png",
+        "cars/porsche718gt4/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p040",
+      "bbox": [
+        136,
+        1436,
+        277,
+        1659
+      ],
+      "area_px": 23233,
+      "calibration_hex": "#EBB55E",
+      "label": "front_intake_duct_left",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p056",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/front.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_left.png"
+      ]
+    },
+    {
+      "id": "p041",
+      "bbox": [
+        1722,
+        489,
+        2047,
+        647
+      ],
+      "area_px": 23214,
+      "calibration_hex": "#6D2FEB",
+      "label": "island_041",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p042",
+      "bbox": [
+        1590,
+        1846,
+        1807,
+        2039
+      ],
+      "area_px": 22018,
+      "calibration_hex": "#4DBF51",
+      "label": "island_042",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p043",
+      "bbox": [
+        644,
+        488,
+        830,
+        695
+      ],
+      "area_px": 21859,
+      "calibration_hex": "#EB2F5F",
+      "label": "side_intake_scoop_right",
+      "up_angle_deg": 180,
+      "forward": "-x",
+      "mirror_of": "p038",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_right.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p044",
+      "bbox": [
+        823,
+        1,
+        1049,
+        172
+      ],
+      "area_px": 20780,
+      "calibration_hex": "#5EABEB",
+      "label": "island_044",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p045",
+      "bbox": [
+        1809,
+        1906,
+        2047,
+        2048
+      ],
+      "area_px": 20163,
+      "calibration_hex": "#A7BF26",
+      "label": "island_045",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p046",
+      "bbox": [
+        1426,
+        366,
+        1688,
+        612
+      ],
+      "area_px": 17308,
+      "calibration_hex": "#D85EEB",
+      "label": "island_046",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p047",
+      "bbox": [
+        1517,
+        1150,
+        1588,
+        1404
+      ],
+      "area_px": 16633,
+      "calibration_hex": "#2FEB9B",
+      "label": "rear_hatch_leading_bar",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/top.png"
+      ]
+    },
+    {
+      "id": "p048",
+      "bbox": [
+        554,
+        1532,
+        855,
+        1654
+      ],
+      "area_px": 16466,
+      "calibration_hex": "#BF6D4D",
+      "label": "island_048",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p049",
+      "bbox": [
+        930,
+        170,
+        1073,
+        352
+      ],
+      "area_px": 16349,
+      "calibration_hex": "#2F30EB",
+      "label": "island_049",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p050",
+      "bbox": [
+        386,
+        1490,
+        609,
+        1620
+      ],
+      "area_px": 15167,
+      "calibration_hex": "#88EB5E",
+      "label": "island_050",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p051",
+      "bbox": [
+        1249,
+        348,
+        1431,
+        502
+      ],
+      "area_px": 15000,
+      "calibration_hex": "#BF2680",
+      "label": "island_051",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p052",
+      "bbox": [
+        678,
+        0,
+        849,
+        148
+      ],
+      "area_px": 14447,
+      "calibration_hex": "#5EDAEB",
+      "label": "island_052",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p053",
+      "bbox": [
+        0,
+        633,
+        51,
+        946
+      ],
+      "area_px": 13572,
+      "calibration_hex": "#EBCA2F",
+      "label": "island_053",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p054",
+      "bbox": [
+        883,
+        338,
+        1022,
+        496
+      ],
+      "area_px": 13365,
+      "calibration_hex": "#8A4DBF",
+      "label": "island_054",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p055",
+      "bbox": [
+        772,
+        129,
+        1007,
+        221
+      ],
+      "area_px": 12805,
+      "calibration_hex": "#2FEB5D",
+      "label": "island_055",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p056",
+      "bbox": [
+        136,
+        909,
+        267,
+        1024
+      ],
+      "area_px": 12005,
+      "calibration_hex": "#EB5E65",
+      "label": "front_intake_duct_right",
+      "up_angle_deg": 270,
+      "forward": "-x",
+      "mirror_of": "p040",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/front.png",
+        "cars/porsche718gt4/calibration/showroom/front_34_right.png"
+      ]
+    },
+    {
+      "id": "p057",
+      "bbox": [
+        1685,
+        476,
+        1799,
+        627
+      ],
+      "area_px": 11573,
+      "calibration_hex": "#265ABF",
+      "label": "island_057",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p058",
+      "bbox": [
+        1627,
+        356,
+        2035,
+        402
+      ],
+      "area_px": 11539,
+      "calibration_hex": "#B7EB5E",
+      "label": "island_058",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p059",
+      "bbox": [
+        310,
+        380,
+        474,
+        465
+      ],
+      "area_px": 11277,
+      "calibration_hex": "#EB2FDC",
+      "label": "rear_wing_endplate_outer_left",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p060",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_left.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_left.png"
+      ]
+    },
+    {
+      "id": "p060",
+      "bbox": [
+        143,
+        381,
+        307,
+        465
+      ],
+      "area_px": 11255,
+      "calibration_hex": "#4DBFA6",
+      "label": "rear_wing_endplate_outer_right",
+      "up_angle_deg": 0,
+      "forward": "+x",
+      "mirror_of": "p059",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/side_right.png",
+        "cars/porsche718gt4/calibration/showroom/rear_34_right.png"
+      ]
+    },
+    {
+      "id": "p061",
+      "bbox": [
+        147,
+        457,
+        308,
+        540
+      ],
+      "area_px": 11006,
+      "calibration_hex": "#EB8B2F",
+      "label": "rear_wing_endplate_inner_right",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": "p062",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/rear.png",
+        "cars/porsche718gt4/calibration/showroom/side_left.png"
+      ]
+    },
+    {
+      "id": "p062",
+      "bbox": [
+        309,
+        457,
+        470,
+        540
+      ],
+      "area_px": 11005,
+      "calibration_hex": "#7A5EEB",
+      "label": "rear_wing_endplate_inner_left",
+      "up_angle_deg": 0,
+      "forward": "+x",
+      "mirror_of": "p061",
+      "confidence": "confirmed",
+      "evidence": [
+        "cars/porsche718gt4/calibration/showroom/rear.png",
+        "cars/porsche718gt4/calibration/showroom/side_right.png"
+      ]
+    },
+    {
+      "id": "p063",
+      "bbox": [
+        524,
+        467,
+        653,
+        608
+      ],
+      "area_px": 10890,
+      "calibration_hex": "#34BF26",
+      "label": "island_063",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p064",
+      "bbox": [
+        1524,
+        351,
+        1712,
+        554
+      ],
+      "area_px": 10712,
+      "calibration_hex": "#EB5E94",
+      "label": "island_064",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    },
+    {
+      "id": "p065",
+      "bbox": [
+        338,
+        1078,
+        377,
+        1462
+      ],
+      "area_px": 9766,
+      "calibration_hex": "#2FAEEB",
+      "label": "island_065",
+      "up_angle_deg": 0,
+      "forward": "-x",
+      "mirror_of": null,
+      "confidence": "guess",
+      "evidence": []
+    }
+  ]
+}
