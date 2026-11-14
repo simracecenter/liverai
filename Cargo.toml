@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = ["crates/liverai-engine", "src-tauri"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/simracecenter/liverai"
+rust-version = "1.85"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+strip = true
+
+# The render engine does heavy per-pixel work; keep it fast in dev builds too.
+[profile.dev.package.liverai-engine]
+opt-level = 2

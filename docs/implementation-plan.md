@@ -1,7 +1,10 @@
 # Livery AI: design and implementation plan
 
-Status: **proposal, awaiting owner approval. No application code has been written.**
-Date: 2026-11-14.
+Status: **approved by the owner on 2026-11-14; implementation in progress.**
+
+Owner decisions (2026-11-14): native Rust render engine (the proof-of-concept Python is not shipped);
+Claude subscription mode only; Sim RaceCenter's own tool, public and open source; name "Livery AI"
+(`liverai`); installer-only releases; no third-party decals in the bundled kit; mockups approved.
 
 Livery AI is a Windows desktop app (Tauri 2) that turns the livery process proven in
 `margic/sandbox` into a product: a Driver gives a brief, a Claude-driven designer renders an iRacing
@@ -45,6 +48,9 @@ In scope for v1:
 - Trading Paints export package with the upload-slot checks.
 - Claude connection settings (section 4).
 
+Livery AI is Sim RaceCenter's own tool, published as open source for interest. It is not a product for
+other teams, so there is one brand kit to begin with.
+
 Out of scope for v1: macOS/Linux builds, a Trading Paints upload API, a 3D viewer of our own (iRacing
 stays the source of 3D truth), cross-seam custom geometry (`seams.json`), multi-user sync.
 
@@ -66,46 +72,47 @@ meant, say so; that is a different design.
 │   ├─ tool server: MCP over loopback HTTP, per-run bearer token        │
 │   └─ Claude runner: spawns the Claude runtime, parses stream-json     │
 │          │ spawns                          │ spawns                   │
+│          │ links                           │ spawns                   │
 │  ┌───────▼─────────┐              ┌────────▼──────────────────────┐   │
-│  │ Engine sidecar  │              │ Claude Code CLI (user's own)  │   │
-│  │ Python, frozen  │◄── tools ────│ `claude -p`, stream-json,     │   │
+│  │ liverai-engine  │              │ Claude Code CLI (user's own)  │   │
+│  │ Rust crate      │◄── tools ────│ `claude -p`, stream-json,     │   │
 │  │ PSD→TGA, lint   │   via core   │ `--mcp-config` → tool server  │   │
 │  └─────────────────┘              └───────────────────────────────┘   │
 └───────────────────────────────────────────────────────────────────────┘
 ```
 
-### 3.1 Engine (Python sidecar)
+### 3.1 Engine (native Rust crate)
 
-A `liverai_engine` package refactored from the sandbox scripts and frozen with PyInstaller into
-`liverai-engine.exe`, shipped as a Tauri sidecar (`bundle.externalBin`). It is a CLI that reads JSON
-and writes JSON plus PNG/TGA files. It has no network access and no Win32 code, so it also runs on
-Linux for tests.
+`crates/liverai-engine` is a Rust library, linked into the app, with a small CLI of the same name for
+testing against real templates. It has no network access and no platform-specific code, so it is tested
+on Linux and Windows. It is a port of the proof-of-concept scripts, checked against them: the test
+fixture's reference values are produced by the proof-of-concept's own Python code.
 
-| Command | Does |
+| Module | Does |
 |---|---|
-| `template inspect` | Layer tree, canvas, pattern count, keep-out boxes (connected components) |
-| `template ingest` | Cache masks, wire, patterns and spec defaults as PNG/NPZ under the car folder |
-| `calibrate` | B0 island map, `islands.json`, calibration TGA |
-| `patterns sheet` | Contact sheet of patterns recoloured with a brand kit |
-| `scan` | 4-mask intrusion scan for a list of boxes |
-| `render` | `livery.json` (+ optional `render.py`) → diffuse TGA, spec TGA, `preview_uv.png`, panel crops, `lint.json` |
-| `lint` | Loop A checks on an existing output |
+| `template` | Reads the PSD (`psd` crate): layer tree, paintable mask, keep-outs, patterns, default spec map and hardware mask. Layer names are normalised |
+| `islands` | UV island segmentation, island geometry, calibration colours, and matching islands to a car's `panels.json` by geometry |
+| `calibrate` | B0 calibration paint with island ids and up arrows, plus `islands.json` |
+| `scan` | 4-mask intrusion scan for decal boxes |
+| `livery` | The `livery.json` schema and validation |
+| `render` | Pattern recolour, panel finishes, decals, spec map, preview and lint |
+| `tga` | 24-bit RLE TGA writer (and a reader for the lint) |
 
-Why Python first: the pipeline is proven in Python (`psd-tools`, Pillow, NumPy, SciPy), and a Rust port
-of PSD parsing and the distance-transform work would be a rewrite with new bugs. Cost: about 60 to
-90 MB more in the installer. A Rust port can follow once the tool contract is stable.
+CLI: `liverai-engine inspect | calibrate | scan | render`, each printing JSON.
 
-**Declarative first, script as the escape hatch.** `livery.json` (schema `livery/1`) covers the base
-pattern, slot colours, region fills, decals, text, and finishes, placed by panel id and normalised
-panel coordinates, not canvas pixels. For work the schema cannot express (the Saltire carbon weave,
-borders derived from pattern channels), the designer may write a project-local `render.py` that
-imports `liverai_engine` helpers. The engine runs it with the working directory set to the project
-folder, and the setting can be turned off.
+**Declarative first.** `livery.json` covers the base pattern, slot colours, per-panel colour and
+finish, decals and finishes. The proof-of-concept's bespoke per-livery effects (the Saltire carbon
+weave, borders derived from pattern channels) are not expressible yet. They will be added as named,
+parameterised engine features (procedural fills, pattern-derived borders), not as scripts: with a
+native engine there is no script interpreter, which also removes the risk of running generated code.
+
+The PSD parser has only been run against a synthetic template so far. The first real test is the
+owner running `liverai-engine inspect` on an iRacing template.
 
 ### 3.2 Core (Rust)
 
 - **Project store.** `Documents\Livery AI\<project>\`: `project.json`, `brief.md`, `livery.json`,
-  optional `render.py`, `assets\`, `revisions\rev-N\` (TGAs, previews, `lint.json`, `showroom\*.png`,
+  `assets\`, `revisions\rev-N\` (TGAs, previews, `lint.json`, `showroom\*.png`,
   `review.json`), `export\`. Plain files so a Driver can back them up or version them.
 - **iRacing bridge** (`windows` crate). Finds the Paint Shop window, detects the 3D viewport bounds
   from the captured frame, sends `Ctrl+R` and orbit drags with `SendInput`, captures with
@@ -129,32 +136,32 @@ Roboto Mono, crisp technical copy.
 
 ## 4. Claude connection (bring your own)
 
-Two modes, chosen in Settings. The app never implements a claude.ai login of its own.
+One mode: **Claude subscription**. The app never implements a claude.ai login of its own and never
+handles a Claude credential.
 
-| Mode | How it works | Billing |
-|---|---|---|
-| **Claude subscription** | The app runs the Driver's own installed Claude Code CLI as a subprocess (`claude -p --output-format stream-json`). Claude Code uses the sign-in the Driver already made with their Pro/Max/Team/Enterprise plan. Settings shows whether the CLI is found and signed in, and a button opens Claude Code's own sign-in in a terminal. | The Driver's plan limits |
-| **Anthropic API key** | The key is saved in Windows Credential Manager and passed to the same CLI as `ANTHROPIC_API_KEY` for that process only, with `--bare`. | Per token, Claude Console |
+The app runs the Driver's own installed Claude Code CLI as a subprocess
+(`claude -p --output-format stream-json`). Claude Code uses the sign-in the Driver already made with
+their Pro/Max/Team/Enterprise plan. Settings shows whether the CLI is found and signed in, and a button
+opens Claude Code's own sign-in in a terminal.
 
-Both modes use one runner, so the designer behaves the same either way. The runner passes
-`--mcp-config` (our tool server only, `--strict-mcp-config`), an `--allowedTools` list limited to our
-tools plus file read/write inside the project folder, the livery-design instructions as an appended
-system prompt, and `--resume <session id>` to continue a project's conversation. Default model
-`claude-opus-5-5`, selectable; effort selectable.
+The runner passes `--mcp-config` (our tool server only, `--strict-mcp-config`), an `--allowedTools`
+list limited to our tools, the livery-design instructions as an appended system prompt, and
+`--resume <session id>` to continue a project's conversation. Default model `claude-opus-5-5`,
+selectable; effort selectable. It never passes `--bare`, which ignores subscription sign-ins.
 
-**Policy risk to decide on.** Anthropic's Agent SDK documentation says: "Unless previously approved,
+**Policy note.** Anthropic's Agent SDK documentation says: "Unless previously approved,
 Anthropic does not allow third party developers to offer claude.ai login or rate limits for their
 products, including agents built on the Claude Agent SDK." Driving the Driver's own Claude Code
 install, with no login UI of ours and no token handling, keeps the sign-in inside Anthropic's product,
-and is how the sandbox process already runs. For the owner's own use this is the same as running
-Claude Code by hand. If Livery AI is distributed to other Drivers as a product, treat the subscription
-mode as needing confirmation from Anthropic, and document the API key as the supported path. The
-branding rules also apply: say "Powered by Claude", and do not present the app as Claude Code.
+and is how the sandbox process already runs. Livery AI is Sim RaceCenter's own tool, so this is the
+same as running Claude Code by hand. Because the source is public, the README says the same thing to
+anyone who builds it: bring your own Claude Code install, and the app does not sign you in. If the app
+were ever offered to others as a product, this would need confirming with Anthropic first. The branding
+rules also apply: say "Powered by Claude", and do not present the app as Claude Code.
 
-Not chosen: asking the Driver to paste a `claude setup-token` value into the app (handling a
-subscription token is the thing the policy restricts), and calling the Messages API directly with a
-hand-written agent loop (API-key only, and it would mean rebuilding context management, sessions and
-image handling that the CLI already provides).
+Not chosen: an API-key mode (owner decision), asking the Driver to paste a `claude setup-token` value
+into the app (handling a subscription token is the thing the policy restricts), and calling the Messages
+API directly with a hand-written agent loop.
 
 Things to verify during M3: exact CLI flags on the minimum supported Claude Code version, how to keep
 the Driver's global `~/.claude` hooks and skills out of subscription-mode runs (`--bare` does not read
@@ -184,10 +191,11 @@ is rebuilt from those files plus the CLI session.
 ```
 .github/workflows/ci.yml, release.yml
 docs/                     this plan, ADRs, tool contract, livery.json schema
-engine/                   Python: liverai_engine/, tests/, pyproject.toml, build.ps1 (PyInstaller)
+Cargo.toml                workspace: crates/liverai-engine, src-tauri
+crates/liverai-engine/    native render engine (library + CLI), tests and synthetic fixture
 src/                      React + TypeScript UI
-src-tauri/                Rust core, tauri.conf.json, capabilities/, binaries/ (sidecar, git-ignored)
-resources/cars/           panels.json + calibration previews for the 11 calibrated cars
+src-tauri/                Rust core, tauri.conf.json, capabilities/
+resources/cars/           panels.json for the 11 calibrated cars (no template-derived images)
 resources/brand/          Sim RaceCenter kit (palette, logos, Roboto)
 resources/prompts/        designer instructions derived from the livery-design skill
 ```
@@ -201,28 +209,22 @@ servers. iRacing templates (`*.psd`) and rendered paints are never committed or 
 
 - UI: `npm ci`, lint, typecheck, unit tests (Vitest).
 - Core: `cargo fmt --check`, `cargo clippy -D warnings`, `cargo test` on `windows-latest`.
-- Engine: `ruff`, `pytest` on `ubuntu-latest` and `windows-latest`, using a small synthetic PSD fixture
-  generated in the test (no iRacing template in the repo). Golden-image and determinism checks from
-  the sandbox's Loop A plan.
-- A debug `tauri build` on Windows to prove the bundle assembles.
+- Engine: `cargo test -p liverai-engine` on `ubuntu-latest` as well, using a small synthetic PSD
+  fixture (no iRacing template in the repo), with reference values from the proof-of-concept code.
 
 **`release.yml`** on a pushed tag `v*.*.*`:
 
-1. Fail unless the tag equals the version in `src-tauri/tauri.conf.json`, `Cargo.toml` and
-   `package.json`.
-2. `windows-latest`: build the engine with PyInstaller into
-   `src-tauri/binaries/liverai-engine-x86_64-pc-windows-msvc.exe`.
-3. `tauri-apps/tauri-action` builds the NSIS installer and creates a **draft** GitHub Release for the
-   tag with `Livery.AI_<version>_x64-setup.exe`, a portable `.zip`, and SHA-256 checksums.
-4. The owner reviews the draft and publishes it.
+1. Fail unless the tag equals the version in the root `Cargo.toml` and `package.json`.
+2. `tauri-apps/tauri-action@v1` on `windows-latest` builds the NSIS installer and creates a **draft**
+   GitHub Release for the tag with the `-setup.exe` attached.
+3. The owner reviews the draft and publishes it.
 
-`permissions: contents: write` on the release job only. Actions pinned by commit SHA.
+`permissions: contents: write` on the release job only.
 
 Later, each needing a secret the owner adds to the repo: code signing (unsigned builds show a
 SmartScreen warning) and the Tauri updater (`TAURI_SIGNING_PRIVATE_KEY`).
 
-I could not reach `v2.tauri.app` from this session, so the `tauri-action` inputs and the NSIS/portable
-options must be checked against the current Tauri docs when the workflow is written.
+The workflow follows the current Tauri GitHub pipeline guide (checked 2026-11-14).
 
 ## 8. Milestones
 
@@ -231,11 +233,11 @@ Each milestone is one or more pull requests and ends with something the owner ca
 | # | Milestone | Done when |
 |---|---|---|
 | M0 | Scaffold and pipeline | Tauri 2 + React shell with the brand theme; `ci.yml` green; tag `v0.0.1` produces a draft release with a Windows installer that launches |
-| M1 | Engine | `liverai_engine` ports ingest, calibration, pattern sheet, scan, `livery.json` render, spec map, lint; tests green; one sandbox livery re-rendered through it and compared with the sandbox output on the owner's PC |
+| M1 | Engine | `liverai-engine` (Rust) ports template reading, calibration, scan, `livery.json` render, spec map, lint; tests green; then one real template inspected and one sandbox livery re-rendered and compared on the owner's PC |
 | M2 | Garage, Cars, manual Studio | Create a project, import a template, see the UV preview and lint for a hand-edited `livery.json`; 11 atlases bundled |
 | M3 | Claude connection and design run to lint | Settings detects and tests both modes; a brief produces a linted revision with the run log streaming |
 | M4 | iRacing bridge and showroom loop | Install with backup, reload, 9-view capture, designer review, Driver feedback, next revision |
-| M5 | Export, brand kits, calibration for new cars | Trading Paints package with checks; a second brand kit; a new template calibrated end to end |
+| M5 | Export, procedural fills, calibration for new cars | Trading Paints package with checks; carbon weave and pattern-derived borders in the engine; a new template calibrated end to end |
 | M6 | Release hardening | Signing, updater, first-run setup, error states, docs; `v0.1.0` |
 
 M1 and the UI half of M2 can run in parallel. M4 needs testing on a PC with iRacing; a cloud session
@@ -245,21 +247,20 @@ cannot run it, so those pull requests ship with a manual test script for the own
 
 | Risk | Mitigation |
 |---|---|
-| Subscription use from a third-party app | Section 4. API key mode is always available. Decide before public distribution |
+| Subscription use from a third-party app | Section 4. The app only drives the Driver's own Claude Code install and handles no credential. Confirm with Anthropic before offering it to others as a product |
 | Paint Shop UI changes break window detection or capture | Detect the viewport from pixels, not fixed offsets; a calibration check in Settings; a manual "I reloaded, capture now" path |
-| Designer-written `render.py` runs code on the Driver's PC | Engine has no network use; runs in the project folder; setting to disable; every script saved in the revision for review |
+| The `psd` crate fails on a real iRacing template | Owner runs `liverai-engine inspect` on real templates early (M1 exit); fall back to another PSD crate or a focused parser for the layer records we need |
+| Declarative schema cannot express a wanted effect | Add it as a named engine feature with tests; no generated scripts |
 | Template layer names vary per car | `template inspect` normalises names with a per-car override file; unknown layouts stop with a clear error |
-| Installer size and antivirus flags on a frozen Python exe | Sign the binaries; consider the Rust port after v0.1 |
+| Unsigned installer shows a SmartScreen warning | Code signing in M6 |
 | Token cost of image-heavy review rounds | Downscale captures to 1024 px; auto-fix round limit; show usage per run |
 
-## 10. Decisions needed from the owner
+## 10. Decisions (owner, 2026-11-14)
 
-1. **Claude connection.** Approve the two-mode design in section 4, including the policy caveat.
-2. **Engine.** Python sidecar first (recommended), or Rust from the start.
-3. **Audience.** Sim RaceCenter's own tool, or a product for any Driver with brand kits. This changes
-   how much weight the subscription question carries, and whether the repo goes public.
-4. **Name.** "Livery AI" in the UI, `liverai` for the repo, binary and folders.
-5. **Release artefacts.** NSIS installer plus portable zip (recommended), or installer only.
-6. **Default assets.** Drop the "Created by Devin.ai" and IRN-BRU decals from the bundled kit
-   (recommended), keeping only Sim RaceCenter marks.
-7. **Mockups.** Approve or mark up the seven screens.
+1. **Claude connection.** Subscription mode only, through the Driver's own Claude Code install.
+2. **Engine.** Native Rust. The proof-of-concept Python is not shipped.
+3. **Audience.** Sim RaceCenter's own tool; the repo is public and open source for interest.
+4. **Name.** "Livery AI" in the UI; `liverai` for the repo, binary and folders.
+5. **Release artefacts.** NSIS installer only.
+6. **Default assets.** No "Created by Devin.ai" or IRN-BRU decals in the bundled kit.
+7. **Mockups.** Approved.
